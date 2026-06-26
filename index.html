@@ -1,0 +1,3407 @@
+<!DOCTYPE html>
+<html class="dark-version" lang="en" data-beasties-container="">
+ <head>
+  <meta charset="utf-8">
+  <title>Claim SOL from Unused Solana Accounts | Unclaimed SOL</title>
+  <meta name="description" content="Claim SOL from empty token accounts, deactivated stakes, Token-2022 accounts, eligible spam NFT burns, recovery accounts, and rewards. Free scan, no signup.">
+  <meta property="og:title" content="Claim SOL from Unused Solana Accounts | Unclaimed SOL">
+  <meta property="og:description" content="Claim SOL from empty token accounts, deactivated stakes, Token-2022 accounts, eligible spam NFT burns, recovery accounts, and rewards. Free scan, no signup.">
+  <meta property="og:url" content="https://unclaimedsol.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/claim_sol_og.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="robots" content="index,follow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@unclaimedSOL">
+  <meta name="twitter:title" content="Claim SOL from Unused Solana Accounts | Unclaimed SOL">
+  <meta name="twitter:description" content="Claim SOL from empty token accounts, deactivated stakes, Token-2022 accounts, eligible spam NFT burns, recovery accounts, and rewards. Free scan, no signup.">
+  <meta name="twitter:image" content="https://unclaimedsol.com/claim_sol_og.webp">
+  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="UnclaimedSOL">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-square.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="canonical" href="https://unclaimedsol.com/">
+  <link rel="manifest" href="manifest.json">
+  <style>
+   @font-face {
+    font-family: primeicons;
+    font-display: swap;
+    src: url("fonts/primeicons-4GST5W3O.woff2") format("woff2"), url("fonts/primeicons-P53SE5CV.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+   }
+
+   .pi {
+    font-family: primeicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+   }
+
+   .pi:before {
+    --webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+   }
+
+   @-webkit-keyframes fa-spin {
+    0% {
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0)
+    }
+
+    to {
+     -webkit-transform: rotate(359deg);
+     transform: rotate(359deg)
+    }
+   }
+
+   .pi-link:before {
+    content: "\e9c1"
+   }
+
+   .pi-shield:before {
+    content: "\e9b9"
+   }
+
+   .pi-wallet:before {
+    content: "\e9c3"
+   }
+
+   .pi-telegram:before {
+    content: "\e9d3"
+   }
+
+   .pi-info-circle:before {
+    content: "\e924"
+   }
+
+   .pi-check-circle:before {
+    content: "\e90a"
+   }
+
+   .pi-search:before {
+    content: "\e908"
+   }
+
+   .pi-exclamation-triangle:before {
+    content: "\e922"
+   }
+
+   .pi-discord:before {
+    content: "\e9c0"
+   }
+
+   .pi-twitter:before {
+    content: "\e9b6"
+   }
+
+   .pi-external-link:before {
+    content: "\e93c"
+   }
+
+   .pi-arrow-right:before {
+    content: "\e91b"
+   }
+
+   .pi-trophy:before {
+    content: "\ea1d"
+   }
+
+   .pi-refresh:before {
+    content: "\e938"
+   }
+
+   .pi-gift:before {
+    content: "\e9f2"
+   }
+
+   .pi-users:before {
+    content: "\e941"
+   }
+
+   .pi-question:before {
+    content: "\e95a"
+   }
+
+   .pi-copy:before {
+    content: "\e957"
+   }
+
+   .pi-history:before {
+    content: "\e9da"
+   }
+
+   @font-face {
+    font-family: Bai Jamjuree;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/bai-jamjuree-v13-latin-400-IHJN5PO6.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+   }
+
+   @font-face {
+    font-family: Bai Jamjuree;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("fonts/bai-jamjuree-v13-latin-600-RQPF2LR4.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+   }
+
+   @font-face {
+    font-family: Bai Jamjuree;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("fonts/bai-jamjuree-v13-latin-700-OTPKKPVO.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+   }
+
+   * {
+    margin: 0;
+    padding: 0
+   }
+
+   html,
+   body {
+    font-family: Bai Jamjuree, sans-serif;
+    background-color: #000;
+    overflow-x: hidden
+   }
+
+   img.glow {
+    filter: drop-shadow(0 0 .1rem rgb(255, 255, 255))
+   }
+
+   .color-light-grey {
+    color: #8b93bd
+   }
+
+   .p1 {
+    font-family: Bai Jamjuree, serif;
+    font-size: 1em
+   }
+
+   h1 {
+    font-family: Bai Jamjuree, serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 700
+   }
+
+   h2 {
+    font-family: Bai Jamjuree, serif;
+    font-weight: 700;
+    font-size: 1.5em
+   }
+
+   h3 {
+    font-family: Bai Jamjuree, serif;
+    font-weight: 700;
+    font-size: 1.17em
+   }
+
+   .light-text {
+    font-family: Bai Jamjuree, serif;
+    font-weight: 400;
+    letter-spacing: 1px
+   }
+
+   .button {
+    padding: 9px 17px;
+    color: #fff;
+    font-family: Bai Jamjuree, serif;
+    font-size: 14px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 106px;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: .3s
+   }
+
+   @media (hover: hover) and (pointer: fine) {
+    .button:hover {
+     background-color: #fff;
+     color: #000
+    }
+   }
+
+   .button--big {
+    padding: 12px 26px;
+    font-size: 18px
+   }
+
+   .ucs-primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border: 1px solid #00ff84;
+    border-radius: 5px;
+    background-color: #00ff84;
+    color: #000;
+    cursor: pointer;
+    font-family: Bai Jamjuree, serif;
+    font-weight: 600;
+    line-height: 1.1;
+    text-decoration: none;
+    box-shadow: 0 6px 20px #00ff8499;
+    transition: background-color .3s, border-color .3s, color .3s, opacity .3s
+   }
+
+   @media (hover: hover) and (pointer: fine) {
+    .ucs-primary-button:hover:not(:disabled) {
+     border-color: #fff;
+     background-color: #fff;
+     color: #000
+    }
+   }
+
+   .ucs-primary-button:disabled {
+    cursor: not-allowed;
+    opacity: .64
+   }
+
+   .ucs-primary-button--lg {
+    min-height: 3.15rem;
+    min-width: min(100%, 13.5rem);
+    padding: 12px 26px;
+    font-size: 18px
+   }
+
+   :root {
+    --jupiter-plugin-primary: 59, 217, 177;
+    --jupiter-plugin-background: 0, 0, 0;
+    --jupiter-plugin-primary-text: 232, 249, 255;
+    --jupiter-plugin-warning: 251, 191, 36;
+    --jupiter-plugin-interactive: 33, 42, 54;
+    --jupiter-plugin-module: 16, 23, 31
+   }
+
+   @media screen and (max-width: 768px) {
+    .button--big {
+     padding: 12px 26px;
+     font-size: 16px
+    }
+   }
+
+   @-webkit-keyframes action {
+    0% {
+     transform: translateY(0)
+    }
+
+    to {
+     transform: translateY(-10px)
+    }
+   }
+
+   .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+    margin-top: -.5rem
+   }
+
+   .grid>.col,
+   .grid>[class*=col] {
+    box-sizing: border-box
+   }
+
+   .col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: .5rem
+   }
+
+   .col-12 {
+    flex: 0 0 auto;
+    padding: .5rem;
+    width: 100%
+   }
+
+   @media screen and (min-width: 768px) {
+    .md\:col-4 {
+     flex: 0 0 auto;
+     padding: .5rem;
+     width: 33.3333%
+    }
+
+    .md\:col-8 {
+     flex: 0 0 auto;
+     padding: .5rem;
+     width: 66.6667%
+    }
+   }
+
+   @media screen and (min-width: 992px) {
+    .lg\:col {
+     flex-grow: 1;
+     flex-basis: 0;
+     padding: .5rem
+    }
+
+    .lg\:col-4 {
+     flex: 0 0 auto;
+     padding: .5rem;
+     width: 33.3333%
+    }
+
+    .lg\:col-6 {
+     flex: 0 0 auto;
+     padding: .5rem;
+     width: 50%
+    }
+
+    .lg\:col-8 {
+     flex: 0 0 auto;
+     padding: .5rem;
+     width: 66.6667%
+    }
+   }
+
+   .hidden {
+    display: none !important
+   }
+
+   .flex {
+    display: flex !important
+   }
+
+   @media screen and (min-width: 768px) {
+    .md\:hidden {
+     display: none !important
+    }
+
+    .md\:flex {
+     display: flex !important
+    }
+   }
+
+   .text-center {
+    text-align: center !important
+   }
+
+   @media screen and (min-width: 768px) {
+    .md\:text-left {
+     text-align: left !important
+    }
+   }
+
+   .font-light {
+    font-weight: 300 !important
+   }
+
+   .font-normal {
+    font-weight: 400 !important
+   }
+
+   .flex-column {
+    flex-direction: column !important
+   }
+
+   .justify-content-center {
+    justify-content: center !important
+   }
+
+   .align-content-center {
+    align-content: center !important
+   }
+
+   .align-items-center {
+    align-items: center !important
+   }
+
+   .gap-4 {
+    gap: 1.5rem !important
+   }
+
+   .gap-5 {
+    gap: 2rem !important
+   }
+
+   .gap-6 {
+    gap: 3rem !important
+   }
+
+   .pb-5 {
+    padding-bottom: 2rem !important
+   }
+
+   .px-4 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important
+   }
+
+   .mt-4 {
+    margin-top: 1.5rem !important
+   }
+
+   .mb-3 {
+    margin-bottom: 1rem !important
+   }
+
+   .mb-5 {
+    margin-bottom: 2rem !important
+   }
+
+   .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important
+   }
+
+   .my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important
+   }
+
+   .border-round-2xl {
+    border-radius: 1rem !important
+   }
+
+   .w-full {
+    width: 100% !important
+   }
+
+   .w-max {
+    width: max-content !important
+   }
+
+   @media screen and (min-width: 768px) {
+    .md\:w-9 {
+     width: 75% !important
+    }
+   }
+
+   .h-full {
+    height: 100% !important
+   }
+
+   .max-w-full {
+    max-width: 100% !important
+   }
+
+   .z-1 {
+    z-index: 1 !important
+   }
+  </style>
+  <link rel="stylesheet" href="css/styles-DWXSLAOC.css" media="print" onload="this.media='all'">
+  <noscript>
+   <link rel="stylesheet" href="styles-DWXSLAOC.css">
+  </noscript>
+  <style type="text/css" data-primeng-style-id="primitive-variables">
+   :root,
+   :host {
+    --p-stone-50: #fafaf9;
+    --p-stone-100: #f5f5f4;
+    --p-stone-200: #e7e5e4;
+    --p-stone-300: #d6d3d1;
+    --p-stone-400: #a8a29e;
+    --p-stone-500: #78716c;
+    --p-stone-600: #57534e;
+    --p-stone-700: #44403c;
+    --p-stone-800: #292524;
+    --p-stone-900: #1c1917;
+    --p-stone-950: #0c0a09;
+    --p-neutral-50: #fafafa;
+    --p-neutral-100: #f5f5f5;
+    --p-neutral-200: #e5e5e5;
+    --p-neutral-300: #d4d4d4;
+    --p-neutral-400: #a3a3a3;
+    --p-neutral-500: #737373;
+    --p-neutral-600: #525252;
+    --p-neutral-700: #404040;
+    --p-neutral-800: #262626;
+    --p-neutral-900: #171717;
+    --p-neutral-950: #0a0a0a;
+    --p-zinc-50: #fafafa;
+    --p-zinc-100: #f4f4f5;
+    --p-zinc-200: #e4e4e7;
+    --p-zinc-300: #d4d4d8;
+    --p-zinc-400: #a1a1aa;
+    --p-zinc-500: #71717a;
+    --p-zinc-600: #52525b;
+    --p-zinc-700: #3f3f46;
+    --p-zinc-800: #27272a;
+    --p-zinc-900: #18181b;
+    --p-zinc-950: #09090b;
+    --p-gray-50: #f9fafb;
+    --p-gray-100: #f3f4f6;
+    --p-gray-200: #e5e7eb;
+    --p-gray-300: #d1d5db;
+    --p-gray-400: #9ca3af;
+    --p-gray-500: #6b7280;
+    --p-gray-600: #4b5563;
+    --p-gray-700: #374151;
+    --p-gray-800: #1f2937;
+    --p-gray-900: #111827;
+    --p-gray-950: #030712;
+    --p-slate-50: #f8fafc;
+    --p-slate-100: #f1f5f9;
+    --p-slate-200: #e2e8f0;
+    --p-slate-300: #cbd5e1;
+    --p-slate-400: #94a3b8;
+    --p-slate-500: #64748b;
+    --p-slate-600: #475569;
+    --p-slate-700: #334155;
+    --p-slate-800: #1e293b;
+    --p-slate-900: #0f172a;
+    --p-slate-950: #020617;
+    --p-rose-50: #fff1f2;
+    --p-rose-100: #ffe4e6;
+    --p-rose-200: #fecdd3;
+    --p-rose-300: #fda4af;
+    --p-rose-400: #fb7185;
+    --p-rose-500: #f43f5e;
+    --p-rose-600: #e11d48;
+    --p-rose-700: #be123c;
+    --p-rose-800: #9f1239;
+    --p-rose-900: #881337;
+    --p-rose-950: #4c0519;
+    --p-pink-50: #fdf2f8;
+    --p-pink-100: #fce7f3;
+    --p-pink-200: #fbcfe8;
+    --p-pink-300: #f9a8d4;
+    --p-pink-400: #f472b6;
+    --p-pink-500: #ec4899;
+    --p-pink-600: #db2777;
+    --p-pink-700: #be185d;
+    --p-pink-800: #9d174d;
+    --p-pink-900: #831843;
+    --p-pink-950: #500724;
+    --p-fuchsia-50: #fdf4ff;
+    --p-fuchsia-100: #fae8ff;
+    --p-fuchsia-200: #f5d0fe;
+    --p-fuchsia-300: #f0abfc;
+    --p-fuchsia-400: #e879f9;
+    --p-fuchsia-500: #d946ef;
+    --p-fuchsia-600: #c026d3;
+    --p-fuchsia-700: #a21caf;
+    --p-fuchsia-800: #86198f;
+    --p-fuchsia-900: #701a75;
+    --p-fuchsia-950: #4a044e;
+    --p-purple-50: #faf5ff;
+    --p-purple-100: #f3e8ff;
+    --p-purple-200: #e9d5ff;
+    --p-purple-300: #d8b4fe;
+    --p-purple-400: #c084fc;
+    --p-purple-500: #a855f7;
+    --p-purple-600: #9333ea;
+    --p-purple-700: #7e22ce;
+    --p-purple-800: #6b21a8;
+    --p-purple-900: #581c87;
+    --p-purple-950: #3b0764;
+    --p-violet-50: #f5f3ff;
+    --p-violet-100: #ede9fe;
+    --p-violet-200: #ddd6fe;
+    --p-violet-300: #c4b5fd;
+    --p-violet-400: #a78bfa;
+    --p-violet-500: #8b5cf6;
+    --p-violet-600: #7c3aed;
+    --p-violet-700: #6d28d9;
+    --p-violet-800: #5b21b6;
+    --p-violet-900: #4c1d95;
+    --p-violet-950: #2e1065;
+    --p-indigo-50: #eef2ff;
+    --p-indigo-100: #e0e7ff;
+    --p-indigo-200: #c7d2fe;
+    --p-indigo-300: #a5b4fc;
+    --p-indigo-400: #818cf8;
+    --p-indigo-500: #6366f1;
+    --p-indigo-600: #4f46e5;
+    --p-indigo-700: #4338ca;
+    --p-indigo-800: #3730a3;
+    --p-indigo-900: #312e81;
+    --p-indigo-950: #1e1b4b;
+    --p-blue-50: #eff6ff;
+    --p-blue-100: #dbeafe;
+    --p-blue-200: #bfdbfe;
+    --p-blue-300: #93c5fd;
+    --p-blue-400: #60a5fa;
+    --p-blue-500: #3b82f6;
+    --p-blue-600: #2563eb;
+    --p-blue-700: #1d4ed8;
+    --p-blue-800: #1e40af;
+    --p-blue-900: #1e3a8a;
+    --p-blue-950: #172554;
+    --p-sky-50: #f0f9ff;
+    --p-sky-100: #e0f2fe;
+    --p-sky-200: #bae6fd;
+    --p-sky-300: #7dd3fc;
+    --p-sky-400: #38bdf8;
+    --p-sky-500: #0ea5e9;
+    --p-sky-600: #0284c7;
+    --p-sky-700: #0369a1;
+    --p-sky-800: #075985;
+    --p-sky-900: #0c4a6e;
+    --p-sky-950: #082f49;
+    --p-cyan-50: #ecfeff;
+    --p-cyan-100: #cffafe;
+    --p-cyan-200: #a5f3fc;
+    --p-cyan-300: #67e8f9;
+    --p-cyan-400: #22d3ee;
+    --p-cyan-500: #06b6d4;
+    --p-cyan-600: #0891b2;
+    --p-cyan-700: #0e7490;
+    --p-cyan-800: #155e75;
+    --p-cyan-900: #164e63;
+    --p-cyan-950: #083344;
+    --p-teal-50: #f0fdfa;
+    --p-teal-100: #ccfbf1;
+    --p-teal-200: #99f6e4;
+    --p-teal-300: #5eead4;
+    --p-teal-400: #2dd4bf;
+    --p-teal-500: #14b8a6;
+    --p-teal-600: #0d9488;
+    --p-teal-700: #0f766e;
+    --p-teal-800: #115e59;
+    --p-teal-900: #134e4a;
+    --p-teal-950: #042f2e;
+    --p-yellow-50: #fefce8;
+    --p-yellow-100: #fef9c3;
+    --p-yellow-200: #fef08a;
+    --p-yellow-300: #fde047;
+    --p-yellow-400: #facc15;
+    --p-yellow-500: #eab308;
+    --p-yellow-600: #ca8a04;
+    --p-yellow-700: #a16207;
+    --p-yellow-800: #854d0e;
+    --p-yellow-900: #713f12;
+    --p-yellow-950: #422006;
+    --p-amber-50: #fffbeb;
+    --p-amber-100: #fef3c7;
+    --p-amber-200: #fde68a;
+    --p-amber-300: #fcd34d;
+    --p-amber-400: #fbbf24;
+    --p-amber-500: #f59e0b;
+    --p-amber-600: #d97706;
+    --p-amber-700: #b45309;
+    --p-amber-800: #92400e;
+    --p-amber-900: #78350f;
+    --p-amber-950: #451a03;
+    --p-orange-50: #fff7ed;
+    --p-orange-100: #ffedd5;
+    --p-orange-200: #fed7aa;
+    --p-orange-300: #fdba74;
+    --p-orange-400: #fb923c;
+    --p-orange-500: #f97316;
+    --p-orange-600: #ea580c;
+    --p-orange-700: #c2410c;
+    --p-orange-800: #9a3412;
+    --p-orange-900: #7c2d12;
+    --p-orange-950: #431407;
+    --p-red-50: #fef2f2;
+    --p-red-100: #fee2e2;
+    --p-red-200: #fecaca;
+    --p-red-300: #fca5a5;
+    --p-red-400: #f87171;
+    --p-red-500: #ef4444;
+    --p-red-600: #dc2626;
+    --p-red-700: #b91c1c;
+    --p-red-800: #991b1b;
+    --p-red-900: #7f1d1d;
+    --p-red-950: #450a0a;
+    --p-lime-50: #f7fee7;
+    --p-lime-100: #ecfccb;
+    --p-lime-200: #d9f99d;
+    --p-lime-300: #bef264;
+    --p-lime-400: #a3e635;
+    --p-lime-500: #84cc16;
+    --p-lime-600: #65a30d;
+    --p-lime-700: #4d7c0f;
+    --p-lime-800: #3f6212;
+    --p-lime-900: #365314;
+    --p-lime-950: #1a2e05;
+    --p-green-50: #f0fdf4;
+    --p-green-100: #dcfce7;
+    --p-green-200: #bbf7d0;
+    --p-green-300: #86efac;
+    --p-green-400: #4ade80;
+    --p-green-500: #22c55e;
+    --p-green-600: #16a34a;
+    --p-green-700: #15803d;
+    --p-green-800: #166534;
+    --p-green-900: #14532d;
+    --p-green-950: #052e16;
+    --p-emerald-50: #ecfdf5;
+    --p-emerald-100: #d1fae5;
+    --p-emerald-200: #a7f3d0;
+    --p-emerald-300: #6ee7b7;
+    --p-emerald-400: #34d399;
+    --p-emerald-500: #10b981;
+    --p-emerald-600: #059669;
+    --p-emerald-700: #047857;
+    --p-emerald-800: #065f46;
+    --p-emerald-900: #064e3b;
+    --p-emerald-950: #022c22;
+    --p-border-radius-none: 0;
+    --p-border-radius-xs: 2px;
+    --p-border-radius-sm: 4px;
+    --p-border-radius-md: 6px;
+    --p-border-radius-lg: 8px;
+    --p-border-radius-xl: 12px;
+   }
+  </style>
+  <style type="text/css" data-primeng-style-id="semantic-variables">
+   :root,
+   :host {
+    --p-transition-duration: 0.2s;
+    --p-disabled-opacity: 0.6;
+    --p-icon-size: 1rem;
+    --p-anchor-gutter: 2px;
+    --p-overlay-navigation-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --p-overlay-modal-border-radius: var(--p-border-radius-xl);
+    --p-overlay-modal-padding: 1.25rem;
+    --p-overlay-modal-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --p-overlay-popover-border-radius: var(--p-border-radius-md);
+    --p-overlay-popover-padding: 0.75rem;
+    --p-overlay-popover-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --p-overlay-select-border-radius: var(--p-border-radius-md);
+    --p-overlay-select-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --p-navigation-submenu-icon-size: 0.875rem;
+    --p-navigation-submenu-label-padding: 0.5rem 0.75rem;
+    --p-navigation-submenu-label-font-weight: 600;
+    --p-navigation-item-padding: 0.5rem 0.75rem;
+    --p-navigation-item-border-radius: var(--p-border-radius-sm);
+    --p-navigation-item-gap: 0.5rem;
+    --p-navigation-list-padding: 0.25rem 0.25rem;
+    --p-navigation-list-gap: 2px;
+    --p-mask-transition-duration: 0.15s;
+    --p-content-border-radius: var(--p-border-radius-md);
+    --p-list-padding: 0.25rem 0.25rem;
+    --p-list-gap: 2px;
+    --p-list-option-group-padding: 0.5rem 0.75rem;
+    --p-list-option-group-font-weight: 600;
+    --p-list-option-padding: 0.5rem 0.75rem;
+    --p-list-option-border-radius: var(--p-border-radius-sm);
+    --p-list-header-padding: 0.5rem 1rem 0.25rem 1rem;
+    --p-form-field-padding-x: 0.75rem;
+    --p-form-field-padding-y: 0.5rem;
+    --p-form-field-border-radius: var(--p-border-radius-md);
+    --p-form-field-transition-duration: var(--p-transition-duration);
+    --p-form-field-focus-ring-width: 0;
+    --p-form-field-focus-ring-style: none;
+    --p-form-field-focus-ring-color: transparent;
+    --p-form-field-focus-ring-offset: 0;
+    --p-form-field-focus-ring-shadow: none;
+    --p-form-field-lg-font-size: 1.125rem;
+    --p-form-field-lg-padding-x: 0.875rem;
+    --p-form-field-lg-padding-y: 0.625rem;
+    --p-form-field-sm-font-size: 0.875rem;
+    --p-form-field-sm-padding-x: 0.625rem;
+    --p-form-field-sm-padding-y: 0.375rem;
+    --p-primary-50: var(--p-emerald-50);
+    --p-primary-100: var(--p-emerald-100);
+    --p-primary-200: var(--p-emerald-200);
+    --p-primary-300: var(--p-emerald-300);
+    --p-primary-400: var(--p-emerald-400);
+    --p-primary-500: var(--p-emerald-500);
+    --p-primary-600: var(--p-emerald-600);
+    --p-primary-700: var(--p-emerald-700);
+    --p-primary-800: var(--p-emerald-800);
+    --p-primary-900: var(--p-emerald-900);
+    --p-primary-950: var(--p-emerald-950);
+    --p-focus-ring-width: 1px;
+    --p-focus-ring-style: solid;
+    --p-focus-ring-color: var(--p-primary-color);
+    --p-focus-ring-offset: 2px;
+    --p-focus-ring-shadow: none;
+    --p-navigation-submenu-icon-color: var(--p-surface-400);
+    --p-navigation-submenu-icon-focus-color: var(--p-surface-500);
+    --p-navigation-submenu-icon-active-color: var(--p-surface-500);
+    --p-navigation-submenu-label-background: transparent;
+    --p-navigation-submenu-label-color: var(--p-text-muted-color);
+    --p-navigation-item-focus-background: var(--p-surface-100);
+    --p-navigation-item-active-background: var(--p-surface-100);
+    --p-navigation-item-color: var(--p-text-color);
+    --p-navigation-item-focus-color: var(--p-text-hover-color);
+    --p-navigation-item-active-color: var(--p-text-hover-color);
+    --p-navigation-item-icon-color: var(--p-surface-400);
+    --p-navigation-item-icon-focus-color: var(--p-surface-500);
+    --p-navigation-item-icon-active-color: var(--p-surface-500);
+    --p-list-option-group-background: transparent;
+    --p-list-option-group-color: var(--p-text-muted-color);
+    --p-list-option-focus-background: var(--p-surface-100);
+    --p-list-option-selected-background: var(--p-highlight-background);
+    --p-list-option-selected-focus-background: var(--p-highlight-focus-background);
+    --p-list-option-color: var(--p-text-color);
+    --p-list-option-focus-color: var(--p-text-hover-color);
+    --p-list-option-selected-color: var(--p-highlight-color);
+    --p-list-option-selected-focus-color: var(--p-highlight-focus-color);
+    --p-list-option-icon-color: var(--p-surface-400);
+    --p-list-option-icon-focus-color: var(--p-surface-500);
+    --p-overlay-modal-background: var(--p-surface-0);
+    --p-overlay-modal-border-color: var(--p-surface-200);
+    --p-overlay-modal-color: var(--p-text-color);
+    --p-overlay-popover-background: var(--p-surface-0);
+    --p-overlay-popover-border-color: var(--p-surface-200);
+    --p-overlay-popover-color: var(--p-text-color);
+    --p-overlay-select-background: var(--p-surface-0);
+    --p-overlay-select-border-color: var(--p-surface-200);
+    --p-overlay-select-color: var(--p-text-color);
+    --p-content-background: var(--p-surface-0);
+    --p-content-hover-background: var(--p-surface-100);
+    --p-content-border-color: var(--p-surface-200);
+    --p-content-color: var(--p-text-color);
+    --p-content-hover-color: var(--p-text-hover-color);
+    --p-text-color: var(--p-surface-700);
+    --p-text-hover-color: var(--p-surface-800);
+    --p-text-muted-color: var(--p-surface-500);
+    --p-text-hover-muted-color: var(--p-surface-600);
+    --p-form-field-background: var(--p-surface-0);
+    --p-form-field-disabled-background: var(--p-surface-200);
+    --p-form-field-filled-background: var(--p-surface-50);
+    --p-form-field-filled-hover-background: var(--p-surface-50);
+    --p-form-field-filled-focus-background: var(--p-surface-50);
+    --p-form-field-border-color: var(--p-surface-300);
+    --p-form-field-hover-border-color: var(--p-surface-400);
+    --p-form-field-focus-border-color: var(--p-primary-color);
+    --p-form-field-invalid-border-color: var(--p-red-400);
+    --p-form-field-color: var(--p-surface-700);
+    --p-form-field-disabled-color: var(--p-surface-500);
+    --p-form-field-placeholder-color: var(--p-surface-500);
+    --p-form-field-invalid-placeholder-color: var(--p-red-600);
+    --p-form-field-float-label-color: var(--p-surface-500);
+    --p-form-field-float-label-focus-color: var(--p-primary-600);
+    --p-form-field-float-label-active-color: var(--p-surface-500);
+    --p-form-field-float-label-invalid-color: var(--p-form-field-invalid-placeholder-color);
+    --p-form-field-icon-color: var(--p-surface-400);
+    --p-form-field-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+    --p-mask-background: rgba(0, 0, 0, 0.4);
+    --p-mask-color: var(--p-surface-200);
+    --p-highlight-background: var(--p-primary-50);
+    --p-highlight-focus-background: var(--p-primary-100);
+    --p-highlight-color: var(--p-primary-700);
+    --p-highlight-focus-color: var(--p-primary-800);
+    --p-primary-color: var(--p-primary-500);
+    --p-primary-contrast-color: #ffffff;
+    --p-primary-hover-color: var(--p-primary-600);
+    --p-primary-active-color: var(--p-primary-700);
+    --p-surface-0: #ffffff;
+    --p-surface-50: var(--p-slate-50);
+    --p-surface-100: var(--p-slate-100);
+    --p-surface-200: var(--p-slate-200);
+    --p-surface-300: var(--p-slate-300);
+    --p-surface-400: var(--p-slate-400);
+    --p-surface-500: var(--p-slate-500);
+    --p-surface-600: var(--p-slate-600);
+    --p-surface-700: var(--p-slate-700);
+    --p-surface-800: var(--p-slate-800);
+    --p-surface-900: var(--p-slate-900);
+    --p-surface-950: var(--p-slate-950);
+   }
+
+   .dark-version {
+    --p-navigation-submenu-icon-color: var(--p-surface-500);
+    --p-navigation-submenu-icon-focus-color: var(--p-surface-400);
+    --p-navigation-submenu-icon-active-color: var(--p-surface-400);
+    --p-navigation-submenu-label-background: transparent;
+    --p-navigation-submenu-label-color: var(--p-text-muted-color);
+    --p-navigation-item-focus-background: var(--p-surface-800);
+    --p-navigation-item-active-background: var(--p-surface-800);
+    --p-navigation-item-color: var(--p-text-color);
+    --p-navigation-item-focus-color: var(--p-text-hover-color);
+    --p-navigation-item-active-color: var(--p-text-hover-color);
+    --p-navigation-item-icon-color: var(--p-surface-500);
+    --p-navigation-item-icon-focus-color: var(--p-surface-400);
+    --p-navigation-item-icon-active-color: var(--p-surface-400);
+    --p-list-option-group-background: transparent;
+    --p-list-option-group-color: var(--p-text-muted-color);
+    --p-list-option-focus-background: var(--p-surface-800);
+    --p-list-option-selected-background: var(--p-highlight-background);
+    --p-list-option-selected-focus-background: var(--p-highlight-focus-background);
+    --p-list-option-color: var(--p-text-color);
+    --p-list-option-focus-color: var(--p-text-hover-color);
+    --p-list-option-selected-color: var(--p-highlight-color);
+    --p-list-option-selected-focus-color: var(--p-highlight-focus-color);
+    --p-list-option-icon-color: var(--p-surface-500);
+    --p-list-option-icon-focus-color: var(--p-surface-400);
+    --p-overlay-modal-background: var(--p-surface-900);
+    --p-overlay-modal-border-color: var(--p-surface-700);
+    --p-overlay-modal-color: var(--p-text-color);
+    --p-overlay-popover-background: var(--p-surface-900);
+    --p-overlay-popover-border-color: var(--p-surface-700);
+    --p-overlay-popover-color: var(--p-text-color);
+    --p-overlay-select-background: var(--p-surface-900);
+    --p-overlay-select-border-color: var(--p-surface-700);
+    --p-overlay-select-color: var(--p-text-color);
+    --p-content-background: var(--p-surface-900);
+    --p-content-hover-background: var(--p-surface-800);
+    --p-content-border-color: var(--p-surface-700);
+    --p-content-color: var(--p-text-color);
+    --p-content-hover-color: var(--p-text-hover-color);
+    --p-text-color: var(--p-surface-0);
+    --p-text-hover-color: var(--p-surface-0);
+    --p-text-muted-color: var(--p-surface-400);
+    --p-text-hover-muted-color: var(--p-surface-300);
+    --p-form-field-background: var(--p-surface-950);
+    --p-form-field-disabled-background: var(--p-surface-700);
+    --p-form-field-filled-background: var(--p-surface-800);
+    --p-form-field-filled-hover-background: var(--p-surface-800);
+    --p-form-field-filled-focus-background: var(--p-surface-800);
+    --p-form-field-border-color: var(--p-surface-600);
+    --p-form-field-hover-border-color: var(--p-surface-500);
+    --p-form-field-focus-border-color: var(--p-primary-color);
+    --p-form-field-invalid-border-color: var(--p-red-300);
+    --p-form-field-color: var(--p-surface-0);
+    --p-form-field-disabled-color: var(--p-surface-400);
+    --p-form-field-placeholder-color: var(--p-surface-400);
+    --p-form-field-invalid-placeholder-color: var(--p-red-400);
+    --p-form-field-float-label-color: var(--p-surface-400);
+    --p-form-field-float-label-focus-color: var(--p-primary-color);
+    --p-form-field-float-label-active-color: var(--p-surface-400);
+    --p-form-field-float-label-invalid-color: var(--p-form-field-invalid-placeholder-color);
+    --p-form-field-icon-color: var(--p-surface-400);
+    --p-form-field-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+    --p-mask-background: rgba(0, 0, 0, 0.6);
+    --p-mask-color: var(--p-surface-200);
+    --p-highlight-background: color-mix(in srgb, var(--p-primary-400), transparent 84%);
+    --p-highlight-focus-background: color-mix(in srgb, var(--p-primary-400), transparent 76%);
+    --p-highlight-color: rgba(255, 255, 255, .87);
+    --p-highlight-focus-color: rgba(255, 255, 255, .87);
+    --p-primary-color: var(--p-primary-400);
+    --p-primary-contrast-color: var(--p-surface-900);
+    --p-primary-hover-color: var(--p-primary-300);
+    --p-primary-active-color: var(--p-primary-200);
+    --p-surface-0: #ffffff;
+    --p-surface-50: var(--p-zinc-50);
+    --p-surface-100: var(--p-zinc-100);
+    --p-surface-200: var(--p-zinc-200);
+    --p-surface-300: var(--p-zinc-300);
+    --p-surface-400: var(--p-zinc-400);
+    --p-surface-500: var(--p-zinc-500);
+    --p-surface-600: var(--p-zinc-600);
+    --p-surface-700: var(--p-zinc-700);
+    --p-surface-800: var(--p-zinc-800);
+    --p-surface-900: var(--p-zinc-900);
+    --p-surface-950: var(--p-zinc-950);
+   }
+  </style>
+  <style type="text/css" data-primeng-style-id="global-variables">
+   :root,
+   :host {
+    color-scheme: light
+   }
+
+   .dark-version {
+    color-scheme: dark
+   }
+  </style>
+  <style type="text/css" data-primeng-style-id="global-style">
+   *,
+   ::before,
+   ::after {
+    box-sizing: border-box;
+   }
+
+   .p-connected-overlay {
+    opacity: 0;
+    transform: scaleY(0.8);
+    transition: transform 0.12s cubic-bezier(0, 0, 0.2, 1), opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+   }
+
+   .p-connected-overlay-visible {
+    opacity: 1;
+    transform: scaleY(1);
+   }
+
+   .p-connected-overlay-hidden {
+    opacity: 0;
+    transform: scaleY(1);
+    transition: opacity 0.1s linear;
+   }
+
+   .p-connected-overlay-enter-from {
+    opacity: 0;
+    transform: scaleY(0.8);
+   }
+
+   .p-connected-overlay-leave-to {
+    opacity: 0;
+   }
+
+   .p-connected-overlay-enter-active {
+    transition: transform 0.12s cubic-bezier(0, 0, 0.2, 1), opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+   }
+
+   .p-connected-overlay-leave-active {
+    transition: opacity 0.1s linear;
+   }
+
+   .p-toggleable-content-enter-from,
+   .p-toggleable-content-leave-to {
+    max-height: 0;
+   }
+
+   .p-toggleable-content-enter-to,
+   .p-toggleable-content-leave-from {
+    max-height: 1000px;
+   }
+
+   .p-toggleable-content-leave-active {
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+   }
+
+   .p-toggleable-content-enter-active {
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+   }
+
+   .p-disabled,
+   .p-disabled * {
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+   }
+
+   .p-disabled,
+   .p-component:disabled {
+    opacity: var(--p-disabled-opacity);
+   }
+
+   .pi {
+    font-size: var(--p-icon-size);
+   }
+
+   .p-icon {
+    width: var(--p-icon-size);
+    height: var(--p-icon-size);
+   }
+
+   .p-overlay-mask {
+    background: var(--p-mask-background);
+    color: var(--p-mask-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+
+   .p-overlay-mask-enter {
+    animation: p-overlay-mask-enter-animation var(--p-mask-transition-duration) forwards;
+   }
+
+   .p-overlay-mask-leave {
+    animation: p-overlay-mask-leave-animation var(--p-mask-transition-duration) forwards;
+   }
+
+   @keyframes p-overlay-mask-enter-animation {
+    from {
+     background: transparent;
+    }
+
+    to {
+     background: var(--p-mask-background);
+    }
+   }
+
+   @keyframes p-overlay-mask-leave-animation {
+    from {
+     background: var(--p-mask-background);
+    }
+
+    to {
+     background: transparent;
+    }
+   }
+  </style>
+  <style ng-app-id="ng">
+   [_nghost-ng-c1254781494] {
+    display: block;
+    height: 100%
+   }
+
+   .app-route[_nghost-ng-c1254781494] {
+    min-height: 100dvh;
+    --app-radius-panel: 24px;
+    --app-radius-control: 14px;
+    --app-control-height: 2.75rem;
+    --app-control-padding-x: 1.05rem;
+    background: radial-gradient(circle at 14% 6%, rgba(42, 197, 143, .16), transparent 28rem), radial-gradient(circle at 50% 100%, rgba(0, 255, 132, .08), transparent 34rem), linear-gradient(180deg, #08281d, #04130e)
+   }
+
+   .site-update-banner[_ngcontent-ng-c1254781494] {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: min(24rem, 100vw - 2rem);
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(129, 255, 152, .45);
+    border-radius: 10px;
+    background: #0e0e0e;
+    color: #fff;
+    box-shadow: 0 18px 42px #00000059
+   }
+
+   .site-update-banner[_ngcontent-ng-c1254781494] strong[_ngcontent-ng-c1254781494] {
+    color: #81ff98;
+    font-size: .95rem
+   }
+
+   .site-update-banner[_ngcontent-ng-c1254781494] span[_ngcontent-ng-c1254781494] {
+    color: #d7dbea;
+    font-size: .9rem;
+    line-height: 1.35
+   }
+
+   .claim-flow-error[_ngcontent-ng-c1254781494] {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 99999;
+    width: min(24rem, 100vw - 2rem);
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(255, 120, 120, .5);
+    border-radius: 10px;
+    background: #1a0f0f;
+    color: #fff;
+    font-size: .95rem;
+    line-height: 1.4;
+    box-shadow: 0 18px 42px #00000059
+   }
+  </style>
+  <style ng-app-id="ng">
+   [_nghost-ng-c1458419955] {
+    display: block;
+    height: 4.5rem;
+    --app-radius-control: 14px;
+    --app-control-height: 2.75rem;
+    --app-control-padding-x: 1.05rem
+   }
+
+   header[_ngcontent-ng-c1458419955] {
+    color: #fff;
+    width: min(100%, 76rem);
+    height: 4.5rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 2.5vw, 1.75rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    z-index: 2
+   }
+
+   header[_ngcontent-ng-c1458419955] img[_ngcontent-ng-c1458419955] {
+    display: block;
+    width: clamp(8.5rem, 14vw, 9.75rem);
+    height: auto
+   }
+
+   .header-actions[_ngcontent-ng-c1458419955] {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem
+   }
+
+   .connect-button[_ngcontent-ng-c1458419955],
+   .nav-icon-button[_ngcontent-ng-c1458419955],
+   .wallet-chip[_ngcontent-ng-c1458419955] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .38rem;
+    font: inherit
+   }
+
+   .connect-button[_ngcontent-ng-c1458419955],
+   .nav-icon-button[_ngcontent-ng-c1458419955],
+   .wallet-chip[_ngcontent-ng-c1458419955] {
+    min-height: var(--app-control-height, 2.75rem);
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: var(--app-radius-control, 14px);
+    background: #ffffff0a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .16s ease, border-color .16s ease, color .16s ease, box-shadow .16s ease
+   }
+
+   .connect-button[_ngcontent-ng-c1458419955] {
+    padding: 0 var(--app-control-padding-x, 1.05rem);
+    font-size: .9rem;
+    font-weight: 400;
+    border-color: #3bd9b157
+   }
+
+   .nav-icon-button[_ngcontent-ng-c1458419955] {
+    width: var(--app-control-height, 2.75rem);
+    padding: 0
+   }
+
+   .connect-button[_ngcontent-ng-c1458419955]:hover,
+   .nav-icon-button[_ngcontent-ng-c1458419955]:hover,
+   .wallet-chip[_ngcontent-ng-c1458419955]:hover {
+    border-color: #00ff84;
+    background: #00ff841a;
+    color: #fff;
+    box-shadow: 0 10px 24px #00ff8433
+   }
+
+   .connect-button[_ngcontent-ng-c1458419955] i[_ngcontent-ng-c1458419955],
+   .nav-icon-button[_ngcontent-ng-c1458419955] i[_ngcontent-ng-c1458419955] {
+    color: #3bd9b1
+   }
+
+   .nav-icon-button[_ngcontent-ng-c1458419955]:disabled {
+    cursor: wait;
+    opacity: .75
+   }
+
+   .wallet-chip[_ngcontent-ng-c1458419955] img[_ngcontent-ng-c1458419955] {
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 10px
+   }
+
+   .wallet-chip[_ngcontent-ng-c1458419955] {
+    padding: .28rem .55rem .28rem .5rem;
+    color: #f7f8ff;
+    cursor: pointer
+   }
+
+   .wallet-chip[_ngcontent-ng-c1458419955] span[_ngcontent-ng-c1458419955] {
+    font-size: .88rem;
+    font-weight: 400
+   }
+
+   .wallet-chip__fallback[_ngcontent-ng-c1458419955] {
+    color: #3bd9b1;
+    font-size: .92rem
+   }
+
+   .wallet-chip__chevron[_ngcontent-ng-c1458419955] {
+    color: #d7dbea9e;
+    font-size: .75rem
+   }
+
+   .wallet-menu[_ngcontent-ng-c1458419955] {
+    display: flex;
+    min-width: 9.5rem;
+    flex-direction: column;
+    gap: .15rem
+   }
+
+   .wallet-menu[_ngcontent-ng-c1458419955] button[_ngcontent-ng-c1458419955] {
+    display: flex;
+    width: 100%;
+    border: 0;
+    border-radius: calc(var(--app-radius-control, 14px) - 4px);
+    background: transparent;
+    color: #d7dbea;
+    cursor: pointer;
+    font: inherit;
+    font-size: .88rem;
+    font-weight: 400;
+    padding: .55rem .65rem;
+    text-align: left
+   }
+
+   .wallet-menu[_ngcontent-ng-c1458419955] button[_ngcontent-ng-c1458419955]:hover {
+    background: #3bd9b11a;
+    color: #3bd9b1
+   }
+
+   @media screen and (max-width: 960px) {
+    [_nghost-ng-c1458419955] {
+     height: auto
+    }
+
+    header[_ngcontent-ng-c1458419955] {
+     height: auto;
+     padding-block: .9rem
+    }
+   }
+
+   @media screen and (max-width: 520px) {
+    .connect-button[_ngcontent-ng-c1458419955] {
+     padding-inline: .65rem
+    }
+   }
+  </style>
+  <style ng-app-id="ng">
+   .max-width-640[_ngcontent-ng-c766230312] {
+    max-width: 640px;
+    margin: 0 auto
+   }
+
+   .box[_ngcontent-ng-c766230312] {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+   }
+
+   .box__content[_ngcontent-ng-c766230312] {
+    max-width: 840px;
+    padding: 4rem 2rem 0
+   }
+
+   .box.hero-img[_ngcontent-ng-c766230312] {
+    background-image: none
+   }
+
+   .box.hero-img[_ngcontent-ng-c766230312]>*[_ngcontent-ng-c766230312] {
+    position: relative;
+    z-index: 1
+   }
+
+   .box.hero-img[_ngcontent-ng-c766230312]:before {
+    content: "";
+    display: none;
+    position: absolute;
+    inset: 0 0 auto;
+    height: min(34rem, 72vh);
+    background-image: url(images/bg.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center
+   }
+
+   .box__video-wrapper[_ngcontent-ng-c766230312] {
+    width: 840px;
+    margin: 4rem auto 2.25rem;
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center
+   }
+
+   .box__video-shell[_ngcontent-ng-c766230312] {
+    position: relative;
+    width: 100%;
+    max-width: 840px;
+    border-radius: 22px;
+    padding: 6px;
+    background: linear-gradient(145deg, #0c0f17, #151b24);
+    border: 1px solid rgba(255, 255, 255, .18);
+    box-shadow: 0 0 35px #ffffff0f, 0 20px 40px #0000008c, 0 0 0 1px #0009;
+    display: flex
+   }
+
+   .box__video-frame[_ngcontent-ng-c766230312] {
+    position: relative;
+    width: 100%
+   }
+
+   .box__video-poster[_ngcontent-ng-c766230312] {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    height: 100%
+   }
+
+   .box__video-poster--hidden[_ngcontent-ng-c766230312] {
+    opacity: 0
+   }
+
+   .box__video[_ngcontent-ng-c766230312] {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 18px;
+    overflow: hidden;
+    object-fit: cover
+   }
+
+   .box__video-ad[_ngcontent-ng-c766230312] {
+    width: 100%
+   }
+
+   @media screen and (min-width: 768px) {
+    .box.hero-img[_ngcontent-ng-c766230312]:before {
+     display: block
+    }
+   }
+
+   .landing-cta-row[_ngcontent-ng-c766230312] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9rem;
+    justify-content: center
+   }
+
+   .scan-address-button[_ngcontent-ng-c766230312] {
+    min-height: auto;
+    min-width: auto;
+    border: 0;
+    background: transparent;
+    color: #b7bfdc;
+    font-weight: 400;
+    box-shadow: none;
+    padding-inline: .25rem;
+    text-decoration: none
+   }
+
+   @media (hover: hover) and (pointer: fine) {
+    .scan-address-button[_ngcontent-ng-c766230312]:hover {
+     background: transparent;
+     color: #3bd9b1
+    }
+   }
+
+   .landing-cta-row[_ngcontent-ng-c766230312] .button[_ngcontent-ng-c766230312] {
+    min-width: min(100%, 13.5rem)
+   }
+
+   .landing-cta-row[_ngcontent-ng-c766230312] .scan-address-button[_ngcontent-ng-c766230312] {
+    min-width: auto
+   }
+
+   .hero-copy[_ngcontent-ng-c766230312] {
+    max-width: 640px
+   }
+
+   .hero-art[_ngcontent-ng-c766230312] {
+    min-width: 0
+   }
+
+   .hero-figure[_ngcontent-ng-c766230312] {
+    width: min(100%, 420px);
+    margin-left: auto
+   }
+
+   .hero-figure[_ngcontent-ng-c766230312] img[_ngcontent-ng-c766230312] {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain
+   }
+
+   .hero-figure--mobile[_ngcontent-ng-c766230312] {
+    margin-inline: auto
+   }
+
+   .hero-figure--mobile[_ngcontent-ng-c766230312] img[_ngcontent-ng-c766230312] {
+    max-height: 280px;
+    width: auto;
+    margin-inline: auto
+   }
+
+   @media screen and (max-width: 767px) {
+    .security-img[_ngcontent-ng-c766230312] {
+     max-height: 320px;
+     max-width: 100%;
+     width: auto;
+     margin-inline: auto
+    }
+   }
+
+   @media screen and (min-width: 768px) {
+    .landing-cta-row[_ngcontent-ng-c766230312] {
+     justify-content: flex-start
+    }
+   }
+
+   .landing-kicker[_ngcontent-ng-c766230312] {
+    margin: 0 auto 1.25rem;
+    color: #81ff98;
+    font-size: .8rem;
+    font-weight: 700
+   }
+
+   .landing-kicker--trust[_ngcontent-ng-c766230312] {
+    margin-bottom: 0
+   }
+
+   .utility-section[_ngcontent-ng-c766230312],
+   .resource-hub[_ngcontent-ng-c766230312],
+   .faq-section[_ngcontent-ng-c766230312] {
+    width: min(100%, 960px);
+    margin: 3rem auto 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(255, 255, 255, .12)
+   }
+
+   .utility-section--intro[_ngcontent-ng-c766230312] {
+    margin-top: 1.5rem
+   }
+
+   .utility-section[_ngcontent-ng-c766230312] {
+    text-align: center
+   }
+
+   .utility-section[_ngcontent-ng-c766230312] .start-claiming[_ngcontent-ng-c766230312] {
+    margin-inline: auto
+   }
+
+   .section-copy[_ngcontent-ng-c766230312] {
+    text-align: center
+   }
+
+   .utility-section[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312],
+   .resource-hub[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312],
+   .faq-section[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312],
+   .proof-item[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312] {
+    color: #3bd9b1;
+    text-decoration: none
+   }
+
+   @media (hover: hover) and (pointer: fine) {
+
+    .utility-section[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312]:hover,
+    .resource-hub[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312]:hover,
+    .faq-section[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312]:hover,
+    .proof-item[_ngcontent-ng-c766230312] a[_ngcontent-ng-c766230312]:hover {
+     color: #81ff98;
+     text-decoration: underline
+    }
+   }
+
+   .proof-band[_ngcontent-ng-c766230312] {
+    margin: 2.5rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 8px;
+    background: #0b0e14c7;
+    overflow: hidden
+   }
+
+   .proof-item[_ngcontent-ng-c766230312] {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .9rem;
+    padding: 1rem;
+    text-align: left
+   }
+
+   .proof-item[_ngcontent-ng-c766230312]:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, .1)
+   }
+
+   .proof-item[_ngcontent-ng-c766230312]:nth-child(n+3) {
+    border-top: 1px solid rgba(255, 255, 255, .1)
+   }
+
+   .proof-item[_ngcontent-ng-c766230312] h3[_ngcontent-ng-c766230312] {
+    margin: 0 0 .25rem;
+    color: #fff;
+    font-size: .98rem
+   }
+
+   .proof-item[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312] {
+    margin: 0;
+    color: #aeb6d2;
+    font-size: .92rem;
+    line-height: 1.55
+   }
+
+   .partner-strip[_ngcontent-ng-c766230312],
+   .assurance-strip[_ngcontent-ng-c766230312] {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 2rem;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 8px;
+    background: #0a0c12a3;
+    overflow: hidden
+   }
+
+   .partner-strip__item[_ngcontent-ng-c766230312],
+   .assurance-strip[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312] {
+    min-width: 0;
+    margin: 0;
+    padding: 1.15rem;
+    color: #c4c9de;
+    text-align: center;
+    line-height: 1.55
+   }
+
+   .partner-strip__item[_ngcontent-ng-c766230312]:not(:last-child),
+   .assurance-strip[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312]:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, .1)
+   }
+
+   .partner-strip__item[_ngcontent-ng-c766230312] {
+    display: flex;
+    min-height: 7rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .85rem
+   }
+
+   .partner-strip__item[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312] {
+    margin: 0;
+    color: #8b93bd;
+    font-size: .92rem
+   }
+
+   .partner-strip__item[_ngcontent-ng-c766230312] img[_ngcontent-ng-c766230312] {
+    display: block;
+    max-width: 100%;
+    height: auto
+   }
+
+   .assurance-strip[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312] {
+    color: #81ff98
+   }
+
+   .resource-hub[_ngcontent-ng-c766230312] {
+    text-align: left
+   }
+
+   .resource-hub__groups[_ngcontent-ng-c766230312] {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(17rem, .65fr);
+    gap: 1rem;
+    margin-top: 2rem
+   }
+
+   .resource-group[_ngcontent-ng-c766230312] {
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 8px;
+    background: #0a0c12c7;
+    overflow: hidden
+   }
+
+   .resource-group[_ngcontent-ng-c766230312] h3[_ngcontent-ng-c766230312] {
+    margin: 0;
+    padding: 1rem 1.1rem;
+    color: #fff;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .1)
+   }
+
+   .resource-list[_ngcontent-ng-c766230312] {
+    display: grid
+   }
+
+   .resource-link[_ngcontent-ng-c766230312] {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: .9rem;
+    min-width: 0;
+    padding: .9rem 1rem;
+    color: #fff;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    transition: background-color .2s ease
+   }
+
+   .resource-link[_ngcontent-ng-c766230312]:last-child {
+    border-bottom: 0
+   }
+
+   @media (hover: hover) and (pointer: fine) {
+    .resource-link[_ngcontent-ng-c766230312]:hover {
+     background: #3bd9b114;
+     text-decoration: none !important
+    }
+   }
+
+   .proof-item[_ngcontent-ng-c766230312]>.pi[_ngcontent-ng-c766230312],
+   .resource-link__icon[_ngcontent-ng-c766230312] {
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px
+   }
+
+   .proof-item[_ngcontent-ng-c766230312]>.pi[_ngcontent-ng-c766230312] {
+    background: #3bd9b11a;
+    color: #81ff98
+   }
+
+   .resource-link__icon[_ngcontent-ng-c766230312] {
+    background: #ffffff0f;
+    color: #3bd9b1
+   }
+
+   .resource-link__copy[_ngcontent-ng-c766230312] {
+    min-width: 0;
+    display: grid;
+    gap: .15rem
+   }
+
+   .resource-link__title[_ngcontent-ng-c766230312] {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.25
+   }
+
+   .resource-link__description[_ngcontent-ng-c766230312] {
+    color: #8b93bd;
+    font-size: .88rem;
+    line-height: 1.45
+   }
+
+   .resource-link__arrow[_ngcontent-ng-c766230312] {
+    color: #81ff98
+   }
+
+   @keyframes _ngcontent-ng-c766230312_landing-reveal {
+    0% {
+     opacity: 0;
+     transform: translateY(34px)
+    }
+
+    to {
+     opacity: 1;
+     transform: translateY(0)
+    }
+   }
+
+   .landing-reveal[_ngcontent-ng-c766230312] {
+    animation: _ngcontent-ng-c766230312_landing-reveal .86s cubic-bezier(.16, 1, .3, 1) both;
+    animation-delay: var(--reveal-delay, 0ms)
+   }
+
+   @media screen and (max-width: 1024px) {
+    .box__content[_ngcontent-ng-c766230312] {
+     padding-top: 3rem
+    }
+
+    .box__video-wrapper[_ngcontent-ng-c766230312] {
+     width: 100%;
+     margin-block: 2rem;
+     padding-inline: 1rem
+    }
+
+    .resource-hub__groups[_ngcontent-ng-c766230312] {
+     grid-template-columns: 1fr
+    }
+   }
+
+   @media screen and (max-width: 767px) {
+
+    .utility-section[_ngcontent-ng-c766230312],
+    .resource-hub[_ngcontent-ng-c766230312],
+    .faq-section[_ngcontent-ng-c766230312] {
+     margin-top: 2.5rem
+    }
+
+    .utility-section--intro[_ngcontent-ng-c766230312] {
+     margin-top: 1.25rem
+    }
+
+    .proof-band[_ngcontent-ng-c766230312],
+    .partner-strip[_ngcontent-ng-c766230312],
+    .assurance-strip[_ngcontent-ng-c766230312] {
+     grid-template-columns: 1fr
+    }
+
+    .proof-item[_ngcontent-ng-c766230312]:nth-child(odd),
+    .partner-strip__item[_ngcontent-ng-c766230312]:not(:last-child),
+    .assurance-strip[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312]:not(:last-child) {
+     border-right: 0
+    }
+
+    .proof-item[_ngcontent-ng-c766230312]:nth-child(n+2),
+    .partner-strip__item[_ngcontent-ng-c766230312]:not(:last-child),
+    .assurance-strip[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312]:not(:last-child) {
+     border-bottom: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .proof-item[_ngcontent-ng-c766230312]:nth-child(n+3) {
+     border-top: 0
+    }
+
+    .resource-link[_ngcontent-ng-c766230312] {
+     align-items: flex-start
+    }
+   }
+
+   @media screen and (max-width: 640px) {
+    .box__content[_ngcontent-ng-c766230312] {
+     padding-inline: 1.25rem
+    }
+
+    .box__video-shell[_ngcontent-ng-c766230312] {
+     border-radius: 18px;
+     padding: 4px;
+     box-shadow: 0 14px 26px #0f172acc, 0 0 0 1px #0f172ae6
+    }
+
+    .box__video[_ngcontent-ng-c766230312] {
+     border-radius: 14px
+    }
+
+    .hero-figure[_ngcontent-ng-c766230312] {
+     margin-inline: auto
+    }
+
+    .landing-cta-row[_ngcontent-ng-c766230312],
+    .landing-cta-row[_ngcontent-ng-c766230312] .button[_ngcontent-ng-c766230312] {
+     width: 100%
+    }
+
+    .utility-section[_ngcontent-ng-c766230312],
+    .resource-hub[_ngcontent-ng-c766230312],
+    .faq-section[_ngcontent-ng-c766230312] {
+     padding-top: 1.35rem
+    }
+
+    .resource-link[_ngcontent-ng-c766230312] {
+     grid-template-columns: auto minmax(0, 1fr)
+    }
+
+    .resource-link__arrow[_ngcontent-ng-c766230312] {
+     display: none
+    }
+   }
+
+   .recent-claims-shell[_ngcontent-ng-c766230312] {
+    width: min(100%, 80rem);
+    min-height: 26rem;
+    margin-inline: auto;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #15161de6, #15161dd1);
+    border: 1px solid rgba(255, 255, 255, .08)
+   }
+
+   .faq-list[_ngcontent-ng-c766230312] {
+    display: flex;
+    flex-direction: column
+   }
+
+   .faq-item[_ngcontent-ng-c766230312] {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    color: #8b93bd;
+    text-align: left
+   }
+
+   .faq-item[_ngcontent-ng-c766230312]:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+   }
+
+   .faq-item[_ngcontent-ng-c766230312] summary[_ngcontent-ng-c766230312] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none
+   }
+
+   .faq-item[_ngcontent-ng-c766230312] summary[_ngcontent-ng-c766230312]::-webkit-details-marker {
+    display: none
+   }
+
+   .faq-item[_ngcontent-ng-c766230312] summary[_ngcontent-ng-c766230312]:after {
+    content: "+";
+    flex: 0 0 auto;
+    color: #81ff98;
+    font-size: 1.25rem;
+    line-height: 1
+   }
+
+   .faq-item[open][_ngcontent-ng-c766230312] summary[_ngcontent-ng-c766230312]:after {
+    content: "-"
+   }
+
+   .faq-item[_ngcontent-ng-c766230312] p[_ngcontent-ng-c766230312] {
+    margin: 0;
+    padding: 0 0 1.2rem;
+    color: #8b93bd;
+    font-size: 1rem;
+    line-height: 2
+   }
+
+   @media (prefers-reduced-motion: reduce) {
+    .p-animateonscroll[_ngcontent-ng-c766230312] {
+     filter: none !important;
+     opacity: 1 !important;
+     transform: none !important
+    }
+
+    .landing-reveal[_ngcontent-ng-c766230312] {
+     animation: none !important
+    }
+
+    .resource-link[_ngcontent-ng-c766230312] {
+     transition: none !important
+    }
+   }
+  </style>
+  <style ng-app-id="ng">
+   [_nghost-ng-c2724400624] {
+    display: block
+   }
+
+   .site-footer[_ngcontent-ng-c2724400624] {
+    color: #e7e9f2;
+    background-color: #0e0e0e;
+    border-top: 1px solid rgba(255, 255, 255, .06);
+    position: relative;
+    z-index: 2
+   }
+
+   .footer-inner[_ngcontent-ng-c2724400624] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2rem
+   }
+
+   .footer-main[_ngcontent-ng-c2724400624] {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) 3fr;
+    gap: 3rem 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .08)
+   }
+
+   .footer-brand[_ngcontent-ng-c2724400624] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    max-width: 340px
+   }
+
+   .footer-logo[_ngcontent-ng-c2724400624] {
+    display: inline-flex;
+    line-height: 0
+   }
+
+   .footer-logo[_ngcontent-ng-c2724400624] img[_ngcontent-ng-c2724400624] {
+    height: 42px;
+    width: auto;
+    display: block
+   }
+
+   .footer-tagline[_ngcontent-ng-c2724400624] {
+    margin: 0;
+    color: #9aa0b4;
+    font-size: .95rem;
+    line-height: 1.55
+   }
+
+   .footer-cta[_ngcontent-ng-c2724400624] {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    background-color: #000;
+    color: #fff;
+    padding: .8rem 1.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .95rem;
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: transform .15s ease, background-color .15s ease, border-color .15s ease
+   }
+
+   .footer-cta[_ngcontent-ng-c2724400624]:hover,
+   .footer-cta[_ngcontent-ng-c2724400624]:focus-visible {
+    background-color: #1a1a1a;
+    border-color: #3bd9b180;
+    transform: translateY(-1px)
+   }
+
+   .footer-cta[_ngcontent-ng-c2724400624] .pi-arrow-right[_ngcontent-ng-c2724400624] {
+    font-size: .8rem;
+    transition: transform .15s ease
+   }
+
+   .footer-cta[_ngcontent-ng-c2724400624]:hover .pi-arrow-right[_ngcontent-ng-c2724400624],
+   .footer-cta[_ngcontent-ng-c2724400624]:focus-visible .pi-arrow-right[_ngcontent-ng-c2724400624] {
+    transform: translate(2px)
+   }
+
+   .footer-columns[_ngcontent-ng-c2724400624] {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem
+   }
+
+   .footer-column-title[_ngcontent-ng-c2724400624] {
+    margin: 0 0 1.1rem;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #8a90a5
+   }
+
+   .footer-column-list[_ngcontent-ng-c2724400624] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem
+   }
+
+   .footer-column-list[_ngcontent-ng-c2724400624] a[_ngcontent-ng-c2724400624],
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624] {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: #e7e9f2;
+    text-decoration: none;
+    font-size: .95rem;
+    line-height: 1.3;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color .15s ease
+   }
+
+   .footer-column-list[_ngcontent-ng-c2724400624] a[_ngcontent-ng-c2724400624]:hover,
+   .footer-column-list[_ngcontent-ng-c2724400624] a[_ngcontent-ng-c2724400624]:focus-visible,
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:hover,
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:focus-visible {
+    color: #3bd9b1
+   }
+
+   .footer-column-list[_ngcontent-ng-c2724400624] a[_ngcontent-ng-c2724400624] .external-arrow[_ngcontent-ng-c2724400624],
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624] .external-arrow[_ngcontent-ng-c2724400624] {
+    color: #6a7083;
+    transition: color .15s ease, transform .15s ease
+   }
+
+   .footer-column-list[_ngcontent-ng-c2724400624] a[_ngcontent-ng-c2724400624]:hover .external-arrow[_ngcontent-ng-c2724400624],
+   .footer-column-list[_ngcontent-ng-c2724400624] a[_ngcontent-ng-c2724400624]:focus-visible .external-arrow[_ngcontent-ng-c2724400624],
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:hover .external-arrow[_ngcontent-ng-c2724400624],
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:focus-visible .external-arrow[_ngcontent-ng-c2724400624] {
+    color: #3bd9b1;
+    transform: translate(1px, -1px)
+   }
+
+   .footer-column-list[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:disabled {
+    cursor: wait;
+    opacity: .75
+   }
+
+   .footer-link-button--loading-slot[_ngcontent-ng-c2724400624] {
+    min-height: 1.25rem
+   }
+
+   .footer-link-spinner[_ngcontent-ng-c2724400624] {
+    width: .8rem;
+    font-size: .8rem;
+    opacity: 0
+   }
+
+   .footer-link-spinner.is-active[_ngcontent-ng-c2724400624] {
+    opacity: 1
+   }
+
+   .footer-badge[_ngcontent-ng-c2724400624] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .1rem .45rem;
+    border-radius: 999px;
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #0e0e0e;
+    background-color: #3bd9b1;
+    min-height: 18px
+   }
+
+   .footer-badge--new[_ngcontent-ng-c2724400624] {
+    background-color: #81ff98
+   }
+
+   .footer-bottom[_ngcontent-ng-c2724400624] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-top: 1.75rem;
+    flex-wrap: wrap
+   }
+
+   .footer-socials[_ngcontent-ng-c2724400624] {
+    display: flex;
+    align-items: center;
+    gap: .75rem
+   }
+
+   .footer-social[_ngcontent-ng-c2724400624] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: #fff;
+    text-decoration: none;
+    transition: background-color .15s ease, border-color .15s ease, transform .15s ease
+   }
+
+   .footer-social[_ngcontent-ng-c2724400624] i[_ngcontent-ng-c2724400624] {
+    font-size: 1rem
+   }
+
+   .footer-social[_ngcontent-ng-c2724400624]:hover,
+   .footer-social[_ngcontent-ng-c2724400624]:focus-visible {
+    background-color: #1a1a1a;
+    border-color: #3bd9b180;
+    color: #3bd9b1;
+    transform: translateY(-1px)
+   }
+
+   .footer-legal[_ngcontent-ng-c2724400624] {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: #8a90a5;
+    font-size: .9rem
+   }
+
+   .footer-legal[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624] {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: #c7cadb;
+    cursor: pointer;
+    font: inherit;
+    font-size: .9rem
+   }
+
+   .footer-legal[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:hover,
+   .footer-legal[_ngcontent-ng-c2724400624] .footer-link-button[_ngcontent-ng-c2724400624]:focus-visible {
+    color: #3bd9b1
+   }
+
+   .footer-copyright[_ngcontent-ng-c2724400624] {
+    color: #6a7083
+   }
+
+   @media (max-width: 960px) {
+    .footer-inner[_ngcontent-ng-c2724400624] {
+     padding: 3rem 1.25rem 1.5rem
+    }
+
+    .footer-main[_ngcontent-ng-c2724400624] {
+     grid-template-columns: 1fr;
+     gap: 2.5rem;
+     padding-bottom: 2rem
+    }
+
+    .footer-columns[_ngcontent-ng-c2724400624] {
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.5rem
+    }
+   }
+
+   @media (max-width: 720px) {
+    .footer-columns[_ngcontent-ng-c2724400624] {
+     grid-template-columns: 1fr 1fr;
+     gap: 1.75rem 1rem
+    }
+   }
+
+   @media (max-width: 640px) {
+    .footer-columns[_ngcontent-ng-c2724400624] {
+     grid-template-columns: 1fr 1fr;
+     gap: 1.75rem 1rem
+    }
+
+    .footer-bottom[_ngcontent-ng-c2724400624] {
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 1.25rem
+    }
+
+    .footer-legal[_ngcontent-ng-c2724400624] {
+     gap: 1rem
+    }
+   }
+  </style>
+  <script type="application/ld+json" data-seo-schema="true">
+   {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Unclaimed SOL",
+    "url": "https://unclaimedsol.com/",
+    "logo": "https://unclaimedsol.com/logo.png",
+    "sameAs": ["https://x.com/unclaimed_sol", "https://t.me/unclaimedsol"]
+   }
+  </script>
+  <script type="application/ld+json" data-seo-schema="true">
+   {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Unclaimed SOL",
+    "url": "https://unclaimedsol.com/"
+   }
+  </script>
+  <script type="application/ld+json" data-seo-schema="true">
+   {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Unclaimed SOL",
+    "url": "https://unclaimedsol.com/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "Requires a Solana wallet such as Phantom, Solflare, or Backpack",
+    "description": "Scan your Solana wallet for dormant accounts and reclaim locked SOL from empty token accounts, deactivated stake accounts, Token-2022 accounts, eligible spam NFT burns, LP/position NFT rent where closable, recovery accounts, and unclaimed DeFi rewards.",
+    "offers": {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "Free to scan. Standard token cleanup uses a 0.002 SOL user-net floor, usually under 2%; Pump/PumpSwap rewards are 3% capped at 1 SOL or 100 USDC, stake is 3%, and other rewards or recovery flows are 15%."
+    },
+    "aggregateRating": {
+     "@type": "AggregateRating",
+     "ratingValue": 4.2,
+     "bestRating": 5,
+     "worstRating": 1,
+     "ratingCount": 9,
+     "reviewCount": 9
+    }
+   }
+  </script>
+  <script type="application/ld+json" data-seo-schema="true">
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+     "@type": "Question",
+     "name": "How does it work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "After connecting your wallet, Unclaimed SOL scans for empty token accounts, reclaimable program accounts, and other eligible accounts that can return SOL. You review the amount, the accounts involved, and the fee deducted from the result before signing with your wallet."
+     }
+    }, {
+     "@type": "Question",
+     "name": "Is it safe to use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Unclaimed SOL never asks for a private key or seed phrase. You sign every transaction in your own wallet, and the security and verification page explains the canonical domain, audit, program ID, fee wallet, recovery vault, and safe usage checks before you use the tool."
+     }
+    }, {
+     "@type": "Question",
+     "name": "Do I need to enter my private key?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Connect a supported wallet such as Phantom, Solflare, or Backpack and sign the transactions there. You should never paste a private key or seed phrase into a claiming tool."
+     }
+    }, {
+     "@type": "Question",
+     "name": "What are the fees?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Standard token cleanup lets users keep up to 0.002 SOL per account, usually with an under 2% fee. Pump/PumpSwap rewards are 3% capped at 1 SOL or 100 USDC, stake is 3%, and other rewards or recovery flows are 15%. The claimable amount shown is the exact amount users receive."
+     }
+    }, {
+     "@type": "Question",
+     "name": "Which wallets are supported?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Unclaimed SOL works with major Solana wallets including Phantom, Solflare, and Backpack, along with other wallets that support standard Solana transaction signing."
+     }
+    }, {
+     "@type": "Question",
+     "name": "Is there support if something goes wrong?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Support is available through Discord, and the site includes wallet guides, a security and verification page, fee documentation, and a public FAQ."
+     }
+    }]
+   }
+  </script>
+  <style ng-app-id="ng">
+   [_nghost-ng-c155942598] {
+    display: block
+   }
+
+   .solpump-ad[_ngcontent-ng-c155942598] {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    width: min(100%, 38rem);
+    margin: 0 auto;
+    padding: .7rem .85rem;
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 12px;
+    background: #ffffff09;
+    color: #e7e9f2;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 1px #ffffff08, 0 8px 18px #0000002e;
+    transition: border-color .14s ease, background .14s ease, transform .14s ease
+   }
+
+   .solpump-ad[_ngcontent-ng-c155942598]:hover,
+   .solpump-ad[_ngcontent-ng-c155942598]:focus-visible {
+    border-color: #ffffff3d;
+    background: #ffffff0e;
+    transform: translateY(-1px)
+   }
+
+   .solpump-ad__icon[_ngcontent-ng-c155942598] {
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: 0 0 auto;
+    border-radius: .65rem;
+    object-fit: cover
+   }
+
+   .solpump-ad__body[_ngcontent-ng-c155942598] {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-direction: column;
+    gap: .12rem
+   }
+
+   .solpump-ad__heading[_ngcontent-ng-c155942598] {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    min-width: 0
+   }
+
+   .solpump-ad__title[_ngcontent-ng-c155942598] {
+    min-width: 0;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 800;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+   }
+
+   .solpump-ad__badge[_ngcontent-ng-c155942598] {
+    flex: 0 0 auto;
+    padding: .08rem .34rem;
+    border: 1px solid rgba(170, 176, 193, .4);
+    border-radius: 999px;
+    color: #aab0c1;
+    background: #ffffff0b;
+    font-size: .58rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1.1
+   }
+
+   .solpump-ad__description[_ngcontent-ng-c155942598] {
+    color: #aab0c1;
+    font-size: .78rem;
+    font-weight: 400;
+    line-height: 1.35
+   }
+
+   .solpump-ad__external[_ngcontent-ng-c155942598] {
+    flex: 0 0 auto;
+    color: #7b8297;
+    font-size: .8rem
+   }
+
+   .solpump-ad--compact[_ngcontent-ng-c155942598] {
+    width: 100%;
+    padding: .65rem .75rem
+   }
+
+   .solpump-ad--compact[_ngcontent-ng-c155942598] .solpump-ad__icon[_ngcontent-ng-c155942598] {
+    width: 2.5rem;
+    height: 2.5rem
+   }
+
+   .solpump-ad--compact[_ngcontent-ng-c155942598] .solpump-ad__title[_ngcontent-ng-c155942598] {
+    font-size: .82rem
+   }
+
+   .solpump-ad--compact[_ngcontent-ng-c155942598] .solpump-ad__description[_ngcontent-ng-c155942598] {
+    font-size: .72rem
+   }
+
+   .solpump-ad--wide[_ngcontent-ng-c155942598] {
+    width: 100%;
+    max-width: none
+   }
+
+   .solpump-ad--inline[_ngcontent-ng-c155942598] {
+    justify-content: center;
+    width: min(100%, 26rem);
+    padding: .65rem .95rem;
+    border-color: #ffffff1f;
+    background: #ffffff09;
+    color: #aab0c1;
+    font-size: .78rem;
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: center
+   }
+
+   .solpump-ad--inline[_ngcontent-ng-c155942598] strong[_ngcontent-ng-c155942598] {
+    color: #e7e9f2;
+    font-weight: 500
+   }
+
+   .solpump-ad--inline[_ngcontent-ng-c155942598] .pi[_ngcontent-ng-c155942598] {
+    color: #aab0c1;
+    font-size: .72rem
+   }
+
+   .solpump-ad--inline[_ngcontent-ng-c155942598]:hover,
+   .solpump-ad--inline[_ngcontent-ng-c155942598]:focus-visible {
+    border-color: #ffffff38;
+    background: #ffffff0e
+   }
+
+   @media (max-width: 420px) {
+    .solpump-ad[_ngcontent-ng-c155942598] {
+     gap: .6rem;
+     padding: .65rem .7rem
+    }
+
+    .solpump-ad__description[_ngcontent-ng-c155942598] {
+     font-size: .72rem
+    }
+   }
+  </style>
+  <style type="text/css" data-primeng-style-id="base">
+   .p-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+   }
+
+   .p-hidden-accessible input,
+   .p-hidden-accessible select {
+    transform: scale(0);
+   }
+
+   .p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--p-scrollbar-width);
+   }
+  </style>
+ </head>
+ <body>
+  <!--nghm-->
+  <script type="text/javascript" id="ng-event-dispatch-contract">
+   (() => {
+    function p(t, n, r, o, e, i, f, m) {
+     return {
+      eventType: t,
+      event: n,
+      targetElement: r,
+      eic: o,
+      timeStamp: e,
+      eia: i,
+      eirp: f,
+      eiack: m
+     }
+    }
+
+    function u(t) {
+     let n = [],
+      r = e => {
+       n.push(e)
+      };
+     return {
+      c: t,
+      q: n,
+      et: [],
+      etc: [],
+      d: r,
+      h: e => {
+       r(p(e.type, e, e.target, t, Date.now()))
+      }
+     }
+    }
+
+    function s(t, n, r) {
+     for (let o = 0; o < n.length; o++) {
+      let e = n[o];
+      (r ? t.etc : t.et).push(e), t.c.addEventListener(e, t.h, r)
+     }
+    }
+
+    function c(t, n, r, o, e = window) {
+     let i = u(t);
+     e._ejsas || (e._ejsas = {}), e._ejsas[n] = i, s(i, r), s(i, o, !0)
+    }
+    window.__jsaction_bootstrap = c;
+   })();
+  </script>
+  <script>
+   window.__jsaction_bootstrap(document.body, "ng", ["click"], ["error"]);
+  </script>
+  <app-root ng-version="20.3.16" ngh="6" ng-server-context="ssg">
+   <router-outlet></router-outlet>
+   <app-shell _nghost-ng-c1254781494="" class="" ngh="5">
+    <app-header _ngcontent-ng-c1254781494="" _nghost-ng-c1458419955="" ngh="0">
+     <header _ngcontent-ng-c1458419955="">
+      <a _ngcontent-ng-c1458419955="" routerlink="/" class="link-logo" href="/" jsaction="click:;">
+       <img _ngcontent-ng-c1458419955="" width="170" height="38" src="images/logo.svg" alt="Unclaimed SOL">
+      </a>
+      <nav _ngcontent-ng-c1458419955="" aria-label="Primary" class="header-actions">
+       <button _ngcontent-ng-c1458419955="" type="button" aria-label="Open leaderboard" title="Leaderboard" class="nav-icon-button" aria-busy="false" jsaction="click:;">
+        <i _ngcontent-ng-c1458419955="" aria-hidden="true" class="pi pi-trophy"></i>
+       </button>
+       <!---->
+       <button  _ngcontent-ng-c1458419955="" type="button" class="k1zqne-65 connect-button" jsaction="click:;">
+        <span _ngcontent-ng-c1458419955="">Connect</span>
+       </button>
+       <!---->
+      </nav>
+     </header>
+     <!---->
+    </app-header>
+    <!---->
+    <main _ngcontent-ng-c1254781494="">
+     <router-outlet _ngcontent-ng-c1254781494=""></router-outlet>
+     <app-home ngh="3">
+      <app-landing _nghost-ng-c766230312="" ngh="2">
+       <div _ngcontent-ng-c766230312="" class="box w-full px-4 hero-img text-center md:text-left">
+        <div _ngcontent-ng-c766230312="" class="box__content">
+         <div _ngcontent-ng-c766230312="" class="grid">
+          <div _ngcontent-ng-c766230312="" class="col-12 md:col-8 lg:col-8 align-content-center hero-copy">
+           <h1 _ngcontent-ng-c766230312="">Claim SOL from Unused Solana Accounts</h1>
+           <p _ngcontent-ng-c766230312="" class="mt-4 mb-5 p1"> Find reclaimable SOL across stale accounts, stakes, NFTs, rewards, and recovery flows. Review every item and sign with your own wallet. </p>
+           <div _ngcontent-ng-c766230312="" class="landing-cta-row">
+            <button _ngcontent-ng-c766230312="" id="start-claiming" type="button" class="k1zqne-65 ucs-primary-button ucs-primary-button--lg start-claiming" jsaction="click:;">
+             <!---->
+             <span _ngcontent-ng-c766230312="">Start Claiming</span>
+             <!---->
+            </button>
+            <button _ngcontent-ng-c766230312="" data-testid="hero-scan-address" type="button" class="k1zqne-65 button button--big scan-address-button" jsaction="click:;"> Scan an Address </button>
+           </div>
+          </div>
+          <div _ngcontent-ng-c766230312="" class="hidden md:flex col-12 md:col-4 lg:col-4 align-items-center justify-content-center hero-art">
+           <div _ngcontent-ng-c766230312="" class="hero-figure">
+            <picture _ngcontent-ng-c766230312="">
+             <source _ngcontent-ng-c766230312="" srcset="images/claimy.webp" type="image/webp">
+             <img _ngcontent-ng-c766230312="" src="images/claimy.png" alt="Claimy" width="420" height="420" fetchpriority="high" loading="eager" decoding="async" class="max-w-full glow" style="aspect-ratio: 1;">
+            </picture>
+            <!---->
+           </div>
+          </div>
+         </div>
+        </div>
+        <div _ngcontent-ng-c766230312="" class="box__video-wrapper z-1">
+         <div _ngcontent-ng-c766230312="" class="box__video-shell">
+          <div _ngcontent-ng-c766230312="" class="box__video-frame">
+           <img _ngcontent-ng-c766230312="" src="images/claim_sol_poster.webp" srcset="images/claim_sol_poster-322.webp 322w, images/claim_sol_poster.webp 690w" sizes="(max-width: 640px) calc(100vw - 90px), (max-width: 1024px) calc(100vw - 80px), 690px" alt="" width="690" height="388" fetchpriority="high" loading="eager" decoding="async" class="box__video box__video-poster">
+           <video _ngcontent-ng-c766230312="" muted="" playsinline="" loop="" preload="none" class="box__video" jsaction="error:;">
+            <!---->
+           </video>
+          </div>
+         </div>
+         <app-solpump-terminal-ad _ngcontent-ng-c766230312="" variant="wide" context="video" class="box__video-ad" _nghost-ng-c155942598="" ngh="1">
+          <!---->
+         </app-solpump-terminal-ad>
+        </div>
+        <!---->
+        <p _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="landing-kicker landing-kicker--trust p-animateonscroll" pc1=""> Trusted by thousands of Solana users </p>
+        <div _ngcontent-ng-c766230312="" class="md:hidden hero-figure hero-figure--mobile">
+         <picture _ngcontent-ng-c766230312="">
+          <source _ngcontent-ng-c766230312="" srcset="images/claimy.webp" type="image/webp">
+          <img _ngcontent-ng-c766230312="" src="images/claimy.png" alt="Claimy" width="420" height="420" fetchpriority="high" loading="eager" decoding="async" class="max-w-full glow" style="aspect-ratio: 1;">
+         </picture>
+         <!---->
+        </div>
+        <section _ngcontent-ng-c766230312="" class="utility-section utility-section--intro">
+         <h2 _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="light-text mb-5 p-animateonscroll" pc2=""> What <strong _ngcontent-ng-c766230312="">Unclaimed SOL</strong> Actually Does </h2>
+         <button _ngcontent-ng-c766230312="" type="button" class="ucs-primary-button ucs-primary-button--lg start-claiming w-max mx-auto mb-5" jsaction="click:;">
+          <!---->
+          <span _ngcontent-ng-c766230312="">Start Claiming</span>
+          <!---->
+          <span _ngcontent-ng-c766230312="" class="font-normal"> - it's free</span>
+          <!---->
+         </button>
+         <div _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="max-width-640 section-copy flex flex-column gap-4 mt-4 font-light mb-5 p-animateonscroll" style="--reveal-delay: 80ms;" pc3="">
+          <p _ngcontent-ng-c766230312="">
+           <strong _ngcontent-ng-c766230312="">Unclaimed SOL</strong> scans beyond basic empty token accounts. It also checks reclaimable program accounts, eligible deactivated stake accounts, and other account types that can return SOL already belonging to the wallet owner.
+          </p>
+          <p _ngcontent-ng-c766230312=""> Before you approve anything, the app shows the estimated reclaimable amount, the accounts involved, and the fee deducted from the result. </p>
+          <p _ngcontent-ng-c766230312=""> You keep control of your wallet throughout the process. No private keys or seed phrases are required, and every transaction is reviewed and signed in your own wallet. </p>
+         </div>
+         <div _ngcontent-ng-c766230312="" data-testid="landing-proof-band" class="proof-band">
+          <article _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="proof-item p-animateonscroll" style="--reveal-delay: 0ms;" pc15="">
+           <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-wallet"></i>
+           <div _ngcontent-ng-c766230312="">
+            <h3 _ngcontent-ng-c766230312="">Supported wallets</h3>
+            <p _ngcontent-ng-c766230312=""> Phantom, Solflare, Backpack, and standard Solana wallets.
+             <!---->
+            </p>
+           </div>
+          </article>
+          <article _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="proof-item p-animateonscroll" style="--reveal-delay: 70ms;" pc16="">
+           <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-info-circle"></i>
+           <div _ngcontent-ng-c766230312="">
+            <h3 _ngcontent-ng-c766230312="">Fees before signing</h3>
+            <p _ngcontent-ng-c766230312=""> Token cleanup uses a 0.002 SOL user-net floor; rewards and recovery fees are documented. <a _ngcontent-ng-c766230312="" href="/fees" jsaction="click:;">Fees</a>
+             <!---->
+            </p>
+           </div>
+          </article>
+          <article _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="proof-item p-animateonscroll" style="--reveal-delay: 140ms;" pc17="">
+           <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-check-circle"></i>
+           <div _ngcontent-ng-c766230312="">
+            <h3 _ngcontent-ng-c766230312="">User-signed transactions</h3>
+            <p _ngcontent-ng-c766230312=""> You review the accounts and sign each transaction yourself.
+             <!---->
+            </p>
+           </div>
+          </article>
+          <article _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="proof-item p-animateonscroll" style="--reveal-delay: 210ms;" pc18="">
+           <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-shield"></i>
+           <div _ngcontent-ng-c766230312="">
+            <h3 _ngcontent-ng-c766230312="">Verification built in</h3>
+            <p _ngcontent-ng-c766230312=""> Audit, public claim records, and canonical usage checks. <a _ngcontent-ng-c766230312="" href="/security" jsaction="click:;">Security</a>
+             <!---->
+            </p>
+           </div>
+          </article>
+          <!---->
+         </div>
+        </section>
+        <section _ngcontent-ng-c766230312="" class="utility-section partner-section">
+         <h2 _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="light-text p-animateonscroll" pc4=""> Built for the <strong _ngcontent-ng-c766230312="">Solana</strong> Community </h2>
+         <div _ngcontent-ng-c766230312="" class="partner-strip">
+          <div _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="partner-strip__item p-animateonscroll" pc5="">
+           <p _ngcontent-ng-c766230312="">Read reviews on</p>
+           <a _ngcontent-ng-c766230312="" href="https://www.trustpilot.com/review/unclaimedsol.com" target="_blank" rel="noopener noreferrer">
+            <img _ngcontent-ng-c766230312="" width="200" height="50" src="images/trustpilot.svg" alt="Trustpilot" loading="lazy" decoding="async">
+           </a>
+          </div>
+          <div _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="partner-strip__item p-animateonscroll" style="--reveal-delay: 70ms;" pc6="">
+           <p _ngcontent-ng-c766230312="">Audited by</p>
+           <a _ngcontent-ng-c766230312="" href="https://www.cyberscope.io/audits/unclaimed-sol" target="_blank" rel="noopener noreferrer">
+            <picture _ngcontent-ng-c766230312="">
+             <source _ngcontent-ng-c766230312="" srcset="images/cyberscope.webp" type="image/webp">
+             <img _ngcontent-ng-c766230312="" width="200" height="43" src="images/cyberscope.png" alt="Cyberscope" loading="lazy" decoding="async">
+            </picture>
+           </a>
+          </div>
+          <div _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="partner-strip__item p-animateonscroll" style="--reveal-delay: 140ms;" pc7="">
+           <p _ngcontent-ng-c766230312="">Featured on</p>
+           <a _ngcontent-ng-c766230312="" href="https://www.coingecko.com/learn/what-are-solana-token-accounts" target="_blank" rel="noopener noreferrer">
+            <img _ngcontent-ng-c766230312="" width="200" height="44" src="images/coingecko.svg" alt="CoinGecko" loading="lazy" decoding="async">
+           </a>
+          </div>
+         </div>
+        </section>
+        <section _ngcontent-ng-c766230312="" class="utility-section">
+         <h2 _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="light-text p-animateonscroll" pc8=""> Why <strong _ngcontent-ng-c766230312="">Thousands</strong> Use Unclaimed SOL Every Week </h2>
+         <div _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="max-width-640 section-copy flex flex-column gap-4 mt-4 font-light color-light-grey p-animateonscroll" style="--reveal-delay: 80ms;" pc9="">
+          <p _ngcontent-ng-c766230312=""> Active Solana wallets often accumulate reclaimable SOL across more than empty token accounts. Depending on wallet history, it can sit in old token accounts, program-related accounts, deactivated stakes, and other eligible accounts that are no longer needed. </p>
+          <p _ngcontent-ng-c766230312=""> Unclaimed SOL identifies those reclaimable accounts, estimates what the wallet can receive after fees, and lets the wallet owner approve the transactions directly. </p>
+          <p _ngcontent-ng-c766230312=""> The service is designed to be understandable before you sign: clear fee disclosure, supported wallet guidance, <a _ngcontent-ng-c766230312="" routerlink="/security" href="/security" jsaction="click:;">security and verification facts</a>, and support links are available in the raw page HTML and the docs. </p>
+          <p _ngcontent-ng-c766230312=""> Need a citation-ready monthly snapshot instead of the live recent-claims feed? See the <a _ngcontent-ng-c766230312="" routerlink="/stats" href="/stats" jsaction="click:;">State of Unclaimed SOL</a>. </p>
+         </div>
+         <div _ngcontent-ng-c766230312="" class="assurance-strip">
+          <p _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="p-animateonscroll" pc10=""> Transparent record of recent claims and on-chain transaction links </p>
+          <p _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" style="--reveal-delay: 70ms;" class="p-animateonscroll" pc11=""> Works with Phantom, Backpack, Solflare, and other standard wallets </p>
+          <p _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" style="--reveal-delay: 140ms;" class="p-animateonscroll" pc12=""> Preview the reclaimable amount and fees before you sign </p>
+         </div>
+        </section>
+        <!---->
+        <!---->
+        <div _ngcontent-ng-c766230312="" aria-hidden="true" class="recent-claims-shell my-5 z-1"></div>
+        <!---->
+        <section _ngcontent-ng-c766230312="" class="security-panel grid my-5 w-full md:w-9 gap-6">
+         <div _ngcontent-ng-c766230312="" class="col-12 lg:col-6">
+          <div _ngcontent-ng-c766230312="" class="flex align-items-center justify-content-center h-full">
+           <img _ngcontent-ng-c766230312="" src="images/security-first.jpg" alt="Security first" loading="lazy" decoding="async" width="778" height="778" class="w-full border-round-2xl security-img" style="aspect-ratio: 1; object-fit: cover;">
+          </div>
+         </div>
+         <div _ngcontent-ng-c766230312="" class="col-12 lg:col">
+          <div _ngcontent-ng-c766230312="" class="flex flex-column gap-5 justify-content-center align-items-center h-full text-center">
+           <img _ngcontent-ng-c766230312="" width="128" height="128" src="images/ShieldCheck.svg" alt="Shield Check" loading="lazy" decoding="async">
+           <h2 _ngcontent-ng-c766230312="" class="light-text">Security First. Always.</h2>
+           <p _ngcontent-ng-c766230312=""> Each record in our recent-claims table links directly to an on-chain account. You can click any wallet address to view its account and verified transactions on Orb. </p>
+           <p _ngcontent-ng-c766230312=""> Public claim records, <a _ngcontent-ng-c766230312="" routerlink="/security" href="/security" jsaction="click:;">the security and verification hub</a>, and clear fee disclosure help users verify how the service works before they sign anything. </p>
+           <button _ngcontent-ng-c766230312="" type="button" class="ucs-primary-button ucs-primary-button--lg start-claiming w-max mx-auto mb-5" jsaction="click:;">
+            <!---->
+            <span _ngcontent-ng-c766230312="">Start Claiming</span>
+            <!---->
+            <span _ngcontent-ng-c766230312="" class="font-normal"> - it's free</span>
+            <!---->
+           </button>
+          </div>
+         </div>
+        </section>
+        <section _ngcontent-ng-c766230312="" data-testid="landing-resource-hub" class="resource-hub w-full md:w-9">
+         <div _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="text-center p-animateonscroll" pc13="">
+          <p _ngcontent-ng-c766230312="" class="landing-kicker">Resource hub</p>
+          <h2 _ngcontent-ng-c766230312="" class="light-text"> Explore what Unclaimed SOL can recover </h2>
+         </div>
+         <div _ngcontent-ng-c766230312="" class="resource-hub__groups">
+          <div _ngcontent-ng-c766230312="" class="resource-group">
+           <h3 _ngcontent-ng-c766230312="">Recovery paths</h3>
+           <div _ngcontent-ng-c766230312="" class="resource-list">
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 0ms;" href="/free-solana" pc19="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-gift"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Get free SOL from your wallet</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Find SOL already locked in unused accounts.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 45ms;" href="/claim-sol" pc20="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-wallet"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">What claiming SOL means</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">A plain guide to reclaiming eligible SOL safely.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 90ms;" href="/pumpfun" pc21="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-search"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">PumpFun unclaimed SOL scanner</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Check creator and Pump/PumpSwap reward paths.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 135ms;" href="/sol-incinerator-alternative" pc22="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-copy"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Sol Incinerator comparison</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Compare account cleanup and recovery coverage.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 180ms;" href="/token-2022-account-cleaner" pc23="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-link"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Token-2022 account cleaner</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Recover rent from eligible Token-2022 accounts.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 225ms;" href="/deactivated-stake-account-recovery" pc24="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-history"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Deactivated stake recovery</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Withdraw SOL from fully deactivated stake accounts.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 270ms;" href="/claim-solana-rewards" pc25="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-users"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Claim Solana rewards</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Scan for eligible unclaimed rewards and creator fees.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 315ms;" href="/spam-nft-burner" pc26="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-exclamation-triangle"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Burn eligible spam NFTs</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Clear eligible spam NFTs and reclaim account rent.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <!---->
+           </div>
+          </div>
+          <div _ngcontent-ng-c766230312="" class="resource-group">
+           <h3 _ngcontent-ng-c766230312="">Trust & docs</h3>
+           <div _ngcontent-ng-c766230312="" class="resource-list">
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 0ms;" href="/fees" pc27="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-info-circle"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Recovery and fee details</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Review fee rules before approving transactions.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 45ms;" href="/security" pc28="" jsaction="click:;">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-shield"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Security and verification hub</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Verify the domain, audit, program ID, and fee wallet.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-arrow-right resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" target="_blank" rel="noopener noreferrer" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 90ms;" href="https://docs.unclaimedsol.com/faq.html" pc29="">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-question"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Frequently asked questions</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Read the public FAQ for safety and wallet guidance.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-external-link resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+            <a _ngcontent-ng-c766230312="" data-testid="resource-hub-link" target="_blank" rel="noopener noreferrer" panimateonscroll="" enterclass="landing-reveal" class="resource-link p-animateonscroll" style="--reveal-delay: 135ms;" href="https://docs.unclaimedsol.com/" pc30="">
+             <span _ngcontent-ng-c766230312="" class="resource-link__icon">
+              <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-link"></i>
+             </span>
+             <span _ngcontent-ng-c766230312="" class="resource-link__copy">
+              <span _ngcontent-ng-c766230312="" class="resource-link__title">Documentation home</span>
+              <span _ngcontent-ng-c766230312="" class="resource-link__description">Open the docs home for product and developer details.</span>
+             </span>
+             <i _ngcontent-ng-c766230312="" aria-hidden="true" class="pi pi-external-link resource-link__arrow"></i>
+            </a>
+            <!---->
+            <!---->
+           </div>
+          </div>
+          <!---->
+         </div>
+        </section>
+        <div _ngcontent-ng-c766230312="" class="faq-section grid my-5 w-full md:w-9">
+         <div _ngcontent-ng-c766230312="" class="col">
+          <h2 _ngcontent-ng-c766230312="" panimateonscroll="" enterclass="landing-reveal" class="light-text mb-3 p-animateonscroll" pc14=""> Frequently Asked Questions </h2>
+          <div _ngcontent-ng-c766230312="" class="faq-list pb-5">
+           <details _ngcontent-ng-c766230312="" open="" class="faq-item">
+            <summary _ngcontent-ng-c766230312="">How does it work?</summary>
+            <p _ngcontent-ng-c766230312=""> After connecting your wallet, we scan for empty token accounts, reclaimable program accounts, and other eligible accounts that can return SOL. You review the amount, the fee, and the transactions before signing with your wallet. </p>
+           </details>
+           <details _ngcontent-ng-c766230312="" class="faq-item">
+            <summary _ngcontent-ng-c766230312="">Is it 100% safe?</summary>
+            <p _ngcontent-ng-c766230312=""> The service never asks for a private key or seed phrase. You sign transactions in your own wallet. The <a _ngcontent-ng-c766230312="" routerlink="/security" href="/security" jsaction="click:;">security and verification hub</a> explains the canonical domain, audit, program ID, fee wallet, recovery vault, and safe usage checks before you use the tool. </p>
+           </details>
+           <details _ngcontent-ng-c766230312="" class="faq-item">
+            <summary _ngcontent-ng-c766230312="">Do I need to enter my private key?</summary>
+            <p _ngcontent-ng-c766230312=""> No. Connect a supported wallet such as Phantom, Solflare, or Backpack and sign the transactions there. You should never paste a private key or seed phrase into a claiming tool. </p>
+           </details>
+           <details _ngcontent-ng-c766230312="" class="faq-item">
+            <summary _ngcontent-ng-c766230312="">Why should you use our tool instead of others?</summary>
+            <p _ngcontent-ng-c766230312=""> Unclaimed SOL is designed to show the reclaimable amount, fee deduction, and affected accounts before you sign. It supports major Solana wallets and documents the security model and help resources in the docs and FAQ. </p>
+           </details>
+           <details _ngcontent-ng-c766230312="" class="faq-item">
+            <summary _ngcontent-ng-c766230312="">What are our fees?</summary>
+            <p _ngcontent-ng-c766230312=""> Standard token cleanup lets you keep up to 0.002 SOL per account, usually with an under 2% fee. Pump/PumpSwap rewards are 3% capped at 1 SOL or 100 USDC, stake is 3%, and other rewards or recovery flows are 15%. The claimable amount shown is the exact amount you will receive. </p>
+           </details>
+           <details _ngcontent-ng-c766230312="" class="faq-item">
+            <summary _ngcontent-ng-c766230312="">Do we provide support?</summary>
+            <p _ngcontent-ng-c766230312=""> Yes. Support is available through Discord, and the site includes wallet guides, a <a _ngcontent-ng-c766230312="" routerlink="/security" href="/security" jsaction="click:;">security and verification page</a>, a fee page, and a public FAQ. When contacting support, include the current app version: 5.0.0-d69bcab </p>
+           </details>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!---->
+       <!---->
+       <!---->
+      </app-landing>
+     </app-home>
+     <!---->
+    </main>
+    <app-footer _ngcontent-ng-c1254781494="" _nghost-ng-c2724400624="" ngh="4">
+     <footer _ngcontent-ng-c2724400624="" class="site-footer">
+      <div _ngcontent-ng-c2724400624="" class="footer-inner">
+       <div _ngcontent-ng-c2724400624="" class="footer-main">
+        <div _ngcontent-ng-c2724400624="" class="footer-brand">
+         <a _ngcontent-ng-c2724400624="" routerlink="/" aria-label="Unclaimed SOL home" class="footer-logo" href="/" jsaction="click:;">
+          <img _ngcontent-ng-c2724400624="" src="images/logo.svg" alt="Unclaimed SOL" width="226" height="49">
+         </a>
+         <p _ngcontent-ng-c2724400624="" class="footer-tagline"> A Solana tool that helps you scan your wallet and reclaim eligible SOL in one guided flow. </p>
+         <a _ngcontent-ng-c2724400624="" routerlink="/" class="footer-cta" href="/?startProcess=true" jsaction="click:;">
+          <i _ngcontent-ng-c2724400624="" aria-hidden="true" class="pi pi-wallet"></i>
+          <span _ngcontent-ng-c2724400624="">Scan my wallet</span>
+          <i _ngcontent-ng-c2724400624="" aria-hidden="true" class="pi pi-arrow-right"></i>
+         </a>
+         <a _ngcontent-ng-c2724400624="" href="https://findly.tools/unclaimed-sol?utm_source=unclaimed-sol" target="_blank" rel="noopener noreferrer">
+          <img _ngcontent-ng-c2724400624="" src="images/findly-tools-badge-dark.svg" alt="Featured on Findly.tools" width="175" height="55" loading="lazy" decoding="async">
+         </a>
+        </div>
+        <nav _ngcontent-ng-c2724400624="" aria-label="Footer" class="footer-columns">
+         <div _ngcontent-ng-c2724400624="" class="footer-column">
+          <h2 _ngcontent-ng-c2724400624="" class="footer-column-title">Product</h2>
+          <ul _ngcontent-ng-c2724400624="" class="footer-column-list">
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/claim-sol" href="/claim-sol" jsaction="click:;">Claim SOL</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/security" href="/security" jsaction="click:;">Security and verification</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/stats" href="/stats" jsaction="click:;">State of Unclaimed SOL</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <button _ngcontent-ng-c2724400624="" type="button" class="footer-link-button footer-link-button--loading-slot" aria-busy="false" jsaction="click:;">
+             <span _ngcontent-ng-c2724400624="">Top Claimers</span>
+             <span _ngcontent-ng-c2724400624="" aria-hidden="true" class="footer-link-spinner pi pi-refresh"></span>
+            </button>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/pumpfun" href="/pumpfun" jsaction="click:;">PumpFun</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://t.me/unclaimed_sol_bot" target="_blank" rel="noopener noreferrer" class="has-external"> Telegram Bot <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div _ngcontent-ng-c2724400624="" class="footer-column">
+          <h2 _ngcontent-ng-c2724400624="" class="footer-column-title">Developers</h2>
+          <ul _ngcontent-ng-c2724400624="" class="footer-column-list">
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://docs.unclaimedsol.com/" target="_blank" rel="noopener noreferrer" class="has-external"> Docs <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://www.npmjs.com/package/@unclaimedsol/spl-burn-close-sdk" target="_blank" rel="noopener noreferrer" class="has-badge"> SDK <span _ngcontent-ng-c2724400624="" class="footer-badge footer-badge--npm">NPM</span>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://docs.unclaimedsol.com/mcp" target="_blank" rel="noopener noreferrer" class="has-badge"> MCP <span _ngcontent-ng-c2724400624="" class="footer-badge footer-badge--new">NEW</span>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://blog.unclaimedsol.com/" target="_blank" rel="noopener noreferrer" class="has-external"> Blog <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://unclaimed-sol.fdback.io/" target="_blank" rel="noopener noreferrer" class="has-external"> Feedback <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://x.com/unclaimed_sol/status/2069785558524567754" target="_blank" rel="noopener noreferrer" class="has-external"> Bug Bounty <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <!---->
+          </ul>
+         </div>
+         <div _ngcontent-ng-c2724400624="" class="footer-column">
+          <h2 _ngcontent-ng-c2724400624="" class="footer-column-title">Tools</h2>
+          <ul _ngcontent-ng-c2724400624="" class="footer-column-list">
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/solana-pda-calculator" href="/tools/solana-pda-calculator" jsaction="click:;">PDA Calculator</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/solana-program-deploy-cost-estimator" href="/tools/solana-program-deploy-cost-estimator" jsaction="click:;">Deploy Cost Estimator</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/solana-token-scanner" href="/tools/solana-token-scanner" jsaction="click:;">Token Scanner</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/solana-wallet-scanner" href="/tools/solana-wallet-scanner" jsaction="click:;">Wallet Scanner</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/solana-rent-calculator" href="/tools/solana-rent-calculator" jsaction="click:;">Rent Calculator</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/stuck-token-burner" href="/tools/stuck-token-burner" jsaction="click:;">Burn Stuck Tokens</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools/lamports-to-sol" href="/tools/lamports-to-sol" jsaction="click:;">Lamports to SOL</a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/tools" href="/tools" jsaction="click:;">All tools</a>
+           </li>
+          </ul>
+         </div>
+         <div _ngcontent-ng-c2724400624="" class="footer-column">
+          <h2 _ngcontent-ng-c2724400624="" class="footer-column-title">Community</h2>
+          <ul _ngcontent-ng-c2724400624="" class="footer-column-list">
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://discord.gg/SG8hdqfPPt" target="_blank" rel="noopener noreferrer" class="has-external"> Discord <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://x.com/unclaimed_sol" target="_blank" rel="noopener noreferrer" class="has-external"> X / Twitter <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" href="https://t.me/unclaimedsol" target="_blank" rel="noopener noreferrer" class="has-external"> Telegram <svg _ngcontent-ng-c2724400624="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="external-arrow">
+              <path _ngcontent-ng-c2724400624="" d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+             </svg>
+            </a>
+           </li>
+           <li _ngcontent-ng-c2724400624="">
+            <a _ngcontent-ng-c2724400624="" routerlink="/about" href="/about" jsaction="click:;">About</a>
+           </li>
+          </ul>
+         </div>
+        </nav>
+       </div>
+       <div _ngcontent-ng-c2724400624="" class="footer-bottom">
+        <div _ngcontent-ng-c2724400624="" class="footer-socials">
+         <a _ngcontent-ng-c2724400624="" href="https://discord.gg/SG8hdqfPPt" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord" class="footer-social">
+          <i _ngcontent-ng-c2724400624="" aria-hidden="true" class="pi pi-discord"></i>
+         </a>
+         <a _ngcontent-ng-c2724400624="" href="https://x.com/unclaimed_sol" target="_blank" rel="noopener noreferrer" title="X" aria-label="X (Twitter)" class="footer-social">
+          <i _ngcontent-ng-c2724400624="" aria-hidden="true" class="pi pi-twitter"></i>
+         </a>
+         <a _ngcontent-ng-c2724400624="" href="https://t.me/unclaimedsol" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Telegram" class="footer-social">
+          <i _ngcontent-ng-c2724400624="" aria-hidden="true" class="pi pi-telegram"></i>
+         </a>
+        </div>
+        <div _ngcontent-ng-c2724400624="" class="footer-legal">
+         <button _ngcontent-ng-c2724400624="" type="button" class="footer-link-button" jsaction="click:;"> Disclaimer </button>
+         <button _ngcontent-ng-c2724400624="" type="button" class="footer-link-button" jsaction="click:;"> Terms </button>
+         <button _ngcontent-ng-c2724400624="" type="button" class="footer-link-button" jsaction="click:;"> Privacy </button>
+         <span _ngcontent-ng-c2724400624="" class="footer-copyright">© 2026</span>
+        </div>
+       </div>
+      </div>
+     </footer>
+     <!---->
+     <!---->
+    </app-footer>
+    <!---->
+    <!---->
+    <!---->
+   </app-shell>
+   <!---->
+  </app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <link rel="modulepreload" href="chunk-OYP2XU6H.js">
+  <link rel="modulepreload" href="chunk-Q7LXOD3O.js">
+  <link rel="modulepreload" href="chunk-IUV2DSHC.js">
+  <link rel="modulepreload" href="chunk-YRRCJ654.js">
+  <link rel="modulepreload" href="chunk-NQN6A64S.js">
+  <link rel="modulepreload" href="chunk-ECZU7ONR.js">
+  <link rel="modulepreload" href="chunk-ZIHHJUZC.js">
+  <link rel="modulepreload" href="chunk-GJSCSTT3.js">
+  <link rel="modulepreload" href="chunk-6VYZOKMP.js">
+  <link rel="modulepreload" href="chunk-GH7KONPD.js">
+  <script src="js/polyfills-DRXBCAEF.js" type="module"></script>
+  <script src="js/main-XCSNYOX4.js" type="module"></script>
+  <link rel="modulepreload" href="chunk-IBYY33SU.js">
+  <link rel="modulepreload" href="chunk-26KBHFK5.js">
+  <link rel="modulepreload" href="chunk-DS2SXPC5.js">
+  <link rel="modulepreload" href="chunk-BOL5LLYO.js">
+  <link rel="modulepreload" href="chunk-7NKICWVF.js">
+  <link rel="modulepreload" href="chunk-WYRAB7U7.js">
+  <link rel="modulepreload" href="chunk-PYE6DJJW.js">
+  <link rel="modulepreload" href="chunk-ZCGHRXY2.js">
+  <link rel="modulepreload" href="chunk-5GP3O32X.js">
+  <link rel="modulepreload" href="chunk-QTLO7YSH.js">
+  <script src="js/k297hmsdnuq.js"></script>
+  <script id="ng-state" type="application/json">
+   {
+    "__nghData__": [{
+     "t": {
+      "6": "t0",
+      "7": "t1",
+      "8": "t2"
+     },
+     "c": {
+      "6": [],
+      "7": [{
+       "i": "t1",
+       "r": 1
+      }],
+      "8": []
+     }
+    }, {
+     "t": {
+      "0": "t10"
+     },
+     "c": {
+      "0": []
+     }
+    }, {
+     "t": {
+      "10": "t4",
+      "11": "t5",
+      "16": "t6",
+      "17": "t8",
+      "21": "t11",
+      "29": "t12",
+      "30": "t13",
+      "31": "t14",
+      "43": "t15",
+      "96": "t17",
+      "97": "t18",
+      "98": "t19",
+      "117": "t20",
+      "118": "t21",
+      "119": "t22",
+      "128": "t23",
+      "170": "t27",
+      "171": "t28",
+      "173": "t7"
+     },
+     "c": {
+      "10": [],
+      "11": [{
+       "i": "t5",
+       "r": 1
+      }],
+      "16": [{
+       "i": "t7",
+       "r": 1
+      }],
+      "17": [{
+       "i": "t8",
+       "r": 1,
+       "t": {
+        "6": "t9"
+       },
+       "c": {
+        "6": []
+       }
+      }],
+      "21": [{
+       "i": "t7",
+       "r": 1
+      }],
+      "29": [],
+      "30": [{
+       "i": "t13",
+       "r": 1
+      }],
+      "31": [{
+       "i": "t14",
+       "r": 1
+      }],
+      "43": [{
+       "i": "t15",
+       "r": 1,
+       "t": {
+        "7": "t16"
+       },
+       "c": {
+        "7": []
+       }
+      }, {
+       "i": "t15",
+       "r": 1,
+       "t": {
+        "7": "t16"
+       },
+       "c": {
+        "7": [{
+         "i": "t16",
+         "r": 1
+        }]
+       }
+      }, {
+       "i": "t15",
+       "r": 1,
+       "t": {
+        "7": "t16"
+       },
+       "c": {
+        "7": []
+       }
+      }, {
+       "i": "t15",
+       "r": 1,
+       "t": {
+        "7": "t16"
+       },
+       "c": {
+        "7": [{
+         "i": "t16",
+         "r": 1
+        }]
+       }
+      }],
+      "96": [],
+      "97": [],
+      "98": [{
+       "i": "t18",
+       "r": 1,
+       "s": 0
+      }],
+      "117": [],
+      "118": [{
+       "i": "t21",
+       "r": 1
+      }],
+      "119": [{
+       "i": "t22",
+       "r": 1
+      }],
+      "128": [{
+       "i": "t23",
+       "r": 1,
+       "t": {
+        "5": "t24"
+       },
+       "c": {
+        "5": [{
+         "i": "t24",
+         "r": 3,
+         "t": {
+          "0": "t25",
+          "1": "t26"
+         },
+         "c": {
+          "0": [{
+           "i": "t25",
+           "r": 1
+          }],
+          "1": []
+         },
+         "x": 8
+        }]
+       }
+      }, {
+       "i": "t23",
+       "r": 1,
+       "t": {
+        "5": "t24"
+       },
+       "c": {
+        "5": [{
+         "i": "t24",
+         "r": 3,
+         "t": {
+          "0": "t25",
+          "1": "t26"
+         },
+         "c": {
+          "0": [{
+           "i": "t25",
+           "r": 1
+          }],
+          "1": []
+         },
+         "x": 2
+        }, {
+         "i": "t24",
+         "r": 3,
+         "t": {
+          "0": "t25",
+          "1": "t26"
+         },
+         "c": {
+          "0": [],
+          "1": [{
+           "i": "t26",
+           "r": 1
+          }]
+         },
+         "x": 2
+        }]
+       }
+      }],
+      "170": [],
+      "171": [],
+      "173": []
+     }
+    }, {}, {
+     "t": {
+      "76": "t30",
+      "144": "t31",
+      "146": "t32"
+     },
+     "c": {
+      "76": [],
+      "144": [],
+      "146": []
+     }
+    }, {
+     "t": {
+      "1": "t3",
+      "4": "t29",
+      "5": "t33",
+      "6": "t34"
+     },
+     "c": {
+      "1": [],
+      "3": [{
+       "i": "c3459115132",
+       "r": 1
+      }],
+      "4": [{
+       "i": "t29",
+       "r": 1
+      }],
+      "5": [],
+      "6": []
+     }
+    }, {
+     "c": {
+      "0": [{
+       "i": "c1254781494",
+       "r": 1
+      }]
+     }
+    }]
+   }
+  </script>
+ </body>
+</html>
